@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Data Breach: When Technical Failures Become Governance Failures | The Integrity Protocol</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Apply Inter font and clean typography styles */
+        html { font-family: 'Inter', sans-serif; }
+        .blog-content h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.75rem; /* text-2xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937; /* text-gray-800 */
+        }
+        .blog-content h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600; /* font-semibold */
+            color: #374151; /* text-gray-700 */
+        }
+        .blog-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.75;
+            color: #4b5563; /* text-gray-600 */
+        }
+        .blog-content strong {
+            font-weight: 700;
+            color: #1f2937;
+        }
+        .integrity-gap-item {
+            border-left: 4px solid #f97316; /* orange-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+    <div class="max-w-3xl mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <!-- Header / Back to Index -->
+        <header class="py-6 border-b border-gray-200 mb-8">
+            <a href="blog.html" class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors">
+                <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back to Blog Index
+            </a>
+        </header>
+
+        <!-- Article Content -->
+        <article class="bg-white p-6 sm:p-10 rounded-xl shadow-2xl">
+            
+            <!-- Post Meta -->
+            <p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">GRC Case Study</p>
+            <p class="text-gray-400 text-sm mb-1">The Integrity Protocol | September 1, 2025</p>
+
+            <!-- Main Title -->
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                The Big Data Breach: When Technical Failures Become Governance Failures
+            </h1>
+
+            <hr class="mb-8 border-t-2 border-indigo-100">
+            
+            <!-- --- IMAGE INSERTION START: Placeholder Image --- -->
+            <figure class="mb-8">
+                <img src="https://placehold.co/1200x600/f97316/ffffff?text=The+Integrity+Gap" 
+                     alt="A stark image of a broken security padlock on a digital door, symbolising a technical failure."
+                     class="w-full h-auto rounded-xl shadow-lg border border-gray-100 object-cover"
+                     loading="lazy">
+                <figcaption class="mt-3 text-center text-sm text-gray-500">
+                    The difference between policy on paper and controls in production is the 'Integrity Gap'.
+                </figcaption>
+            </figure>
+            <!-- --- IMAGE INSERTION END --- -->
+
+            <!-- Post Body -->
+            <div class="blog-content text-lg">
+                
+                <h2>Case Summary</h2>
+                <p>
+                    In September 2022, one of Australia’s largest telco's suffered a major data breach, tragically affecting nearly 10 million customers. Personal details, including names, addresses, birth dates, phone numbers, and crucially, primary identity documents like passport and driver’s license information, were exposed.
+                </p>
+                <p>
+                    The cause, as widely reported, stemmed from an <strong>exposed API</strong> (a digital gateway for data) that did not require <strong>authentication</strong>. This was not a sophisticated hack; it was a fundamental, avoidable security lapse.
+                </p>
+                <p>
+                    For me, this event crystallised why my career pivot is necessary. It shows that GRC professionals must be able to credibly interrogate the <strong>technical controls</strong>—not just review the policy documents—to prevent these crises.
+                </p>
+
+                <h2>The Integrity Gap</h2>
+                <p>
+                    Where did things truly break down? The failure was layered. It wasn't just a coding error; it was a deep misalignment between policy, practice, and accountability.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="integrity-gap-item p-4 bg-orange-50 rounded-r-lg">
+                        <h3 class="mt-0 text-orange-700">1. Technical Integrity</h3>
+                        <p class="text-gray-800 m-0">
+                            Sensitive customer data was sitting behind an API without proper authentication—the digital equivalent of leaving the vault door ajar. This is a direct violation of the <strong>Secure What You Hold</strong> principle. Why was this vulnerability not detected in development, testing, or production? The answer lies outside the code.
+                        </p>
+                    </div>
+
+                    <div class="integrity-gap-item p-4 bg-orange-50 rounded-r-lg">
+                        <h3 class="mt-0 text-orange-700">2. Organisational Integrity</h3>
+                        <p class="text-gray-800 m-0">
+                            The telco claimed to follow "best practice security." However, the breach revealed a massive gap between the organisation's <strong>stated policy on paper</strong> and the <strong>actual controls in practice</strong>. This gap is where governance fails. It demonstrates a culture where checking the boxes was prioritised over rigorous enforcement of security principles.
+                        </p>
+                    </div>
+
+                    <div class="integrity-gap-item p-4 bg-orange-50 rounded-r-lg">
+                        <h3 class="mt-0 text-orange-700">3. Governance Integrity</h3>
+                        <p class="text-gray-800 m-0">
+                            Ultimately, <strong>responsibility was diffused</strong>. Who inside the telco owned the risk of this specific API? Who was accountable for enforcing the principles of <strong>Data Minimisation</strong> (why were the identity documents retained for so long?) and <strong>Security by Design</strong>? Governance isn't just about setting rules; it's about aligning responsibility, accountability, and action. When governance fails, the technical gaps become existential threats.
+                        </p>
+                    </div>
+                </div>
+
+                <h2>The Ethical Failure</h2>
+                <p>
+                    Why does this matter beyond "bad PR" and regulatory fines? Because a data breach is a profound ethical failure.
+                </p>
+                <ul class="list-disc list-inside space-y-2 pl-4 mb-6 text-gray-700">
+                    <li><strong>Breach of Social Contract:</strong> Users hand over their most sensitive details with the implicit, binding expectation that the custodian will protect it. When that contract is broken, the foundation of digital trust crumbles.</li>
+                    <li><strong>Tangible Harm:</strong> Exposed identity documents don't just result in an inconvenience; they are the currency of fraud and identity theft, leading to real, measurable harm for millions of individuals.</li>
+                </ul>
+
+                <h2>The Core Lesson for GRC</h2>
+                <p>
+                    This breach demonstrates that the <strong>Integrity Protocol Framework</strong> is non-negotiable. Every system must be challenged on:
+                </p>
+                <ol class="list-decimal list-inside space-y-2 pl-4 mb-6 font-semibold text-gray-800">
+                    <li><strong>Minimisation:</strong> Why was this data still held?</li>
+                    <li><strong>Security:</strong> Why was the technical control (authentication) missing?</li>
+                    <li><strong>Accountability:</strong> Who signed off on the system's security, and why did the audit process fail to flag this critical flaw?</li>
+                </ol>
+                <p>
+                    This case study is the 'Why' behind my current learning sprint. To govern effectively, one must understand how a simple technical slip can become a multi-million dollar, nation-level governance crisis.
+                </p>
+
+            </div>
+
+        </article>
+        
+        <!-- Footer / Placeholder for Navigation -->
+        <footer class="mt-12 pt-6 text-center text-gray-500 border-t border-gray-200">
+            <p class="text-sm">
+                &copy; 2025 The Integrity Protocol. All Rights Reserved.
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
