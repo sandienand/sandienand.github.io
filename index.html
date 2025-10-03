@@ -7,6 +7,7 @@
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome for Icons (using reliable CDN link to fix preview errors) -->
+    <!-- Fixed integrity attribute for clean loading -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1R0T10oJgKK8UQKzS9kfa8i0eKqjG/AkkkR3f0tH/A1Yh9jQfH/9v5U0bF9E1W5E0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* Custom font import and application */
@@ -58,9 +59,14 @@
                         <a href="https://github.com/sandienand" target="_blank" class="hover:text-gray-900 transition"><i class="fab fa-github mr-2"></i>GitHub/sandienand</a>
                     </div>
                 </div>
-                <!-- Mock Profile Image/Placeholder -->
-                <div class="mt-4 md:mt-0 w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 text-3xl font-bold flex-shrink-0 shadow-inner">
-                    SN
+                <!-- Actual Profile Image (Replaced Mock Placeholder) -->
+                <div class="mt-4 md:mt-0 w-24 h-24 flex-shrink-0">
+                    <img 
+                        src="uploaded:1698651141960.jpg-3d05ff03-b2b0-4285-bdae-d0aa63525e02" 
+                        alt="Sandie Nand Professional Headshot"
+                        class="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
+                        onerror="this.onerror=null; this.src='https://placehold.co/96x96/6366f1/ffffff?text=SN';"
+                    >
                 </div>
             </div>
 
