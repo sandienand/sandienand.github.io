@@ -24,25 +24,30 @@
             outline-offset: 2px;
         }
     </style>
+    
 </head>
 <body class="antialiased">
 
-    <!-- Header: Sticky Navigation -->
+    <!-- UNIVERSAL HEADER BLOCK (This is the only header now) -->
     <header class="bg-white shadow-lg sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-extrabold text-indigo-700 tracking-wider">The Integrity Protocol</a>
+                    <!-- Logo links to the index page. Using your TIPLOGFIN.jpg path. -->
+                    <a href="index.html" class="text-xl font-bold text-gray-800 tracking-wide">
+                        <img src="/assets/images/TIPLOGFIN.jpg" alt="The Integrity Protocol Logo" class="h-8 w-auto">
+                    </a>
                 </div>
                 <nav class="flex space-x-6 md:space-x-8">
-                    <a href="about-me.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">About Me</a>
-                    <a href="repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Portfolio</a>
-                    <!-- Strategy Link updated to blog.html -->
-                    <a href="blog.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Strategy</a>
+                    <!-- Links use a base style and an ID for dynamic active highlighting -->
+                    <a id="nav-about-me" href="about-me.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">About Me</a>
+                    <a id="nav-repos" href="repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
+                    <a id="nav-strategy" href="blog.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Strategy</a>
                 </nav>
             </div>
         </div>
     </header>
+
 
     <!-- 1. Hero Section: Immediate Value Proposition -->
     <section class="hero-bg py-20 md:py-32">
@@ -180,6 +185,36 @@
             </div>
         </div>
     </footer>
+    <script>
+        function setActiveLink() {
+            const path = window.location.pathname;
+            let activeLink;
 
+            // Define which page path matches which nav ID
+            // Note: Since this is index.html, it will activate 'nav-about-me'
+            if (path.includes('/repos.html')) {
+                activeLink = 'nav-repos';
+            } else if (path.includes('/blog.html')) {
+                activeLink = 'nav-strategy';
+            } else if (path.includes('/about-me.html') || path === '/' || path.includes('/index.html') || path === '/index.html') {
+                // Treats index.html or the root path (/) as the 'About Me' page
+                activeLink = 'nav-about-me';
+            }
+
+            if (activeLink) {
+                const element = document.getElementById(activeLink);
+                if (element) {
+                    // Remove the default, inactive classes
+                    element.classList.remove('text-gray-600', 'hover:text-indigo-600');
+                    
+                    // Add the active, highlighted classes
+                    element.classList.add('text-indigo-600', 'font-semibold', 'border-b-2', 'border-indigo-600');
+                }
+            }
+        }
+        
+        // Run the function when the page loads
+        setActiveLink();
+    </script>
 </body>
 </html>
