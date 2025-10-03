@@ -3,172 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Sandie Nand</title>
-    <!-- Load Tailwind CSS -->
+    <title>Blog - Sandie Nand (Integrity Protocol)</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1R0T10oJgKK8UQKzS9kfa8i0eKqjG/AkkkR3f0tH/A1Yh9jQfH/9v5U0bF9E1W5E0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        /* Custom font import and application (matches index.html) */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f4f6f9;
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
+        .post-card { transition: transform 0.2s, box-shadow 0.2s; }
+        .post-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
     </style>
 </head>
 <body class="antialiased">
-
-    <!-- Header / Navigation Bar (Copied from index.html) -->
+    <!-- Header -->
     <header class="bg-white shadow-lg sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo/Site Title -->
                 <div class="flex-shrink-0">
-                    <a href="index.html" class="text-xl font-bold text-gray-800 tracking-wide">
-                        Sandie Nand (Integrity Protocol)
-                    </a>
+                    <a href="index.html" class="text-xl font-bold text-gray-800 tracking-wide">Sandie Nand (Integrity Protocol)</a>
                 </div>
-                <!-- Navigation Links -->
                 <nav class="flex space-x-6 md:space-x-8">
                     <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Resume</a>
                     <a href="repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
-                    <!-- Highlight the active page link -->
                     <a href="blog.html" class="text-indigo-600 font-semibold transition duration-150 ease-in-out border-b-2 border-indigo-600">Blog</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Main Blog Content Container -->
+    <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <h1 class="text-4xl font-extrabold text-gray-900 mb-4 text-center">GRC, Cyber Security & Integrity Insights</h1>
-        <!-- Corrected emphasis here -->
-        <p class="text-xl text-gray-600 mb-10 text-center max-w-3xl mx-auto">
-            My thoughts and analysis on the intersection of legislative compliance, cyber governance, and technical integrity, published under <span class="font-semibold text-gray-700">The Integrity Protocol</span> moniker.
-        </p>
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4">The Integrity Protocol Blog</h1>
+        <p class="text-xl text-gray-600 mb-10">Insights on Governance, Risk, Compliance (GRC), AI Ethics, and career transition.</p>
 
-        <!-- Blog Post Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            <!-- POST 6: My GRC Career Sprint, Take 2 -->
-            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col">
-                <div class="p-6 flex-grow">
+            <!-- Post 6 -->
+            <a href="post_6.html" class="post-card block bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="p-6">
                     <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">GRC Leadership</span>
                     <h2 class="text-xl font-bold text-gray-900 mb-2">My GRC Career Sprint, Take 2. The Adaptive Plan for Leadership</h2>
-                    <p class="text-sm text-gray-500 mb-4">Published: October 2025</p>
-                    <p class="text-gray-700 flex-grow">
-                        A deeper dive into the 'how' of pivoting into Governance, Risk, and Compliance leadership, focusing on a strategically adaptable approach for continuous learning.
-                    </p>
+                    <p class="text-gray-500 text-sm">A strategic evolution plan focused on technical fluency, certification, and practical application.</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="far fa-calendar-alt mr-2"></i> Oct 2025
+                    </div>
                 </div>
-                <div class="p-6 border-t">
-                    <!-- Updated link text -->
-                    <a href="uploaded:6.pdf" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center group">
-                        Read Article
-                        <i class="fas fa-arrow-up-right-from-square ml-2 text-sm"></i>
-                    </a>
-                </div>
-            </div>
+            </a>
 
-            <!-- POST 5: Navigating My New Path -->
-            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col">
-                <div class="p-6 flex-grow">
-                    <span class="inline-block bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Career Transition</span>
-                    <h2 class="text-xl font-bold text-gray-900 mb-2">Navigating My New Path. A Flexible Plan for GRC Leadership</h2>
-                    <p class="text-sm text-gray-500 mb-4">Published: September 24, 2025</p>
-                    <p class="text-gray-700 flex-grow">
-                        Outlining a flexible guide to transition into a GRC leadership role, balancing foundational knowledge with practical, hands-on technical skills.
-                    </p>
+            <!-- Post 5 -->
+            <a href="post_5.html" class="post-card block bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="p-6">
+                    <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Strategy</span>
+                    <h2 class="text-xl font-bold text-gray-900 mb-2">Navigating My New Path: A Flexible Plan for GRC Leadership</h2>
+                    <p class="text-gray-500 text-sm">Sharing the initial framework for transitioning proven risk and compliance expertise into a GRC leadership role.</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="far fa-calendar-alt mr-2"></i> Sep 24, 2025
+                    </div>
                 </div>
-                <div class="p-6 border-t">
-                    <!-- Updated link text -->
-                    <a href="uploaded:5.pdf" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center group">
-                        Read Article
-                        <i class="fas fa-arrow-up-right-from-square ml-2 text-sm"></i>
-                    </a>
+            </a>
+            
+            <!-- Post 4 -->
+            <a href="post_4.html" class="post-card block bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="p-6">
+                    <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Framework</span>
+                    <h2 class="text-xl font-bold text-gray-900 mb-2">The Integrity Protocol Framework: A practical framework for digital trust and accountability</h2>
+                    <p class="text-gray-500 text-sm">Introducing a simple triad for ethical governance in AI, data, and digital systems: Hold, Secure, Govern.</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="far fa-calendar-alt mr-2"></i> Sep 1, 2025
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <!-- POST 4: The Integrity Protocol Framework -->
-            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col">
-                <div class="p-6 flex-grow">
-                    <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Framework</span>
-                    <h2 class="text-xl font-bold text-gray-900 mb-2">The Integrity Protocol Framework</h2>
-                    <p class="text-sm text-gray-500 mb-4">Published: September 1, 2025</p>
-                    <p class="text-gray-700 flex-grow">
-                        WIP theory for digital trust based on a simple triad: Hold Only What You Must, Secure What You Hold, and Act With Accountability.
-                    </p>
-                </div>
-                <div class="p-6 border-t">
-                    <!-- Updated link text -->
-                    <a href="uploaded:4.pdf" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center group">
-                        Read Article
-                        <i class="fas fa-arrow-up-right-from-square ml-2 text-sm"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- POST 3: The Big Data Breach -->
-            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col">
-                <div class="p-6 flex-grow">
-                    <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Cyber Security</span>
+            <!-- Post 3 -->
+            <a href="post_3.html" class="post-card block bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="p-6">
+                    <span class="inline-block bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Case Study</span>
                     <h2 class="text-xl font-bold text-gray-900 mb-2">The Big Data Breach: When Technical Failures Become Governance Failures</h2>
-                    <p class="text-sm text-gray-500 mb-4">Published: September 1, 2025</p>
-                    <p class="text-gray-700 flex-grow">
-                        A case summary on a major data breach, analyzing the breakdown of technical, organisational, and governance integrity that led to the event.
-                    </p>
+                    <p class="text-gray-500 text-sm">Analysing the Australian telco data breach and the critical intersection of technical and organisational integrity.</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="far fa-calendar-alt mr-2"></i> Sep 1, 2025
+                    </div>
                 </div>
-                <div class="p-6 border-t">
-                    <!-- Updated link text -->
-                    <a href="uploaded:3.pdf" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center group">
-                        Read Article
-                        <i class="fas fa-arrow-up-right-from-square ml-2 text-sm"></i>
-                    </a>
-                </div>
-            </div>
+            </a>
 
-            <!-- POST 2: The Paradox of the Future-Proof Job -->
-            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col">
-                <div class="p-6 flex-grow">
-                    <span class="inline-block bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">AI Governance</span>
+            <!-- Post 2 -->
+            <a href="post_2.html" class="post-card block bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="p-6">
+                    <span class="inline-block bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Future of Work</span>
                     <h2 class="text-xl font-bold text-gray-900 mb-2">The Paradox of the Future-Proof Job: Why I'm Trading Compliance for a Career in AI Governance</h2>
-                    <p class="text-sm text-gray-500 mb-4">Published: August 23, 2025</p>
-                    <p class="text-gray-700 flex-grow">
-                        Analyzing how job resilience to automation impacts career strategy, and why the future lies in governance that can't be scripted.
-                    </p>
+                    <p class="text-gray-500 text-sm">Reflecting on JSA 2050 forecasts and the resilience of work to automation vs. digitisation.</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="far fa-calendar-alt mr-2"></i> Aug 23, 2025
+                    </div>
                 </div>
-                <div class="p-6 border-t">
-                    <!-- Updated link text -->
-                    <a href="uploaded:2.pdf" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center group">
-                        Read Article
-                        <i class="fas fa-arrow-up-right-from-square ml-2 text-sm"></i>
-                    </a>
-                </div>
-            </div>
+            </a>
 
-            <!-- POST 1: From Finance & Compliance to AI Ethics -->
-            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col">
-                <div class="p-6 flex-grow">
+            <!-- Post 1 -->
+            <a href="post_1.html" class="post-card block bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="p-6">
                     <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">AI Ethics</span>
                     <h2 class="text-xl font-bold text-gray-900 mb-2">From Finance & Compliance to AI Ethics: My Journey to a New Frontier</h2>
-                    <p class="text-sm text-gray-500 mb-4">Published: August 1, 2025</p>
-                    <p class="text-gray-700 flex-grow">
-                        Detailing the strategic pivot from financial integrity and AML/KYC to the challenging new domain of technological integrity and AI ethics.
-                    </p>
+                    <p class="text-gray-500 text-sm">The strategic pivot, leveraging core experience in risk and compliance for technological integrity.</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="far fa-calendar-alt mr-2"></i> Aug 1, 2025
+                    </div>
                 </div>
-                <div class="p-6 border-t">
-                    <!-- Updated link text -->
-                    <a href="uploaded:1.pdf" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center group">
-                        Read Article
-                        <i class="fas fa-arrow-up-right-from-square ml-2 text-sm"></i>
-                    </a>
-                </div>
-            </div>
+            </a>
             
         </div>
     </main>
 
-    <!-- Footer (Copied from index.html) -->
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white mt-10">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
             <p>&copy; 2025 Sandie Nand. All rights reserved.</p>
