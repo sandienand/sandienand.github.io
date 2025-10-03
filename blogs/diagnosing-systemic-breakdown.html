@@ -9,8 +9,6 @@
     <style>
         /* Import Inter font and set base styles */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
-        
-        /* The body style below sets the light blue/grey page background! */
         body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
         
         /* Custom styles for article content for better readability - MATCHING TARGET TEMPLATE */
@@ -67,52 +65,59 @@
     </style>
 </head>
 <body class="antialiased">
-<header class="bg-white shadow-lg sticky top-0 z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-            <div class="flex-shrink-0">
-                <a href="/index.html" class="text-xl font-bold text-gray-800 tracking-wide">
-                    <img src="/assets/images/TIPLOGOFIN.png" alt="The Integrity Protocol Logo" class="h-8 w-auto">
-                </a>
+    <!-- HEADER SECTION CHANGES -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <!-- Logo links to the index page -->
+                    <a href="/index.html" class="text-xl font-bold text-gray-800 tracking-wide">
+                        <img src="/assets/images/TIPLOGOFIN.png" alt="The Integrity Protocol Logo" class="h-8 w-auto">
+                    </a>
+                </div>
+                <nav class="flex space-x-6 md:space-x-8">
+                    <!-- Links use a base style and an ID for dynamic active highlighting -->
+                    <a id="nav-about-me" href="/about-me.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">About Me</a>
+                    <a id="nav-repos" href="/repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
+                    <a id="nav-strategy" href="/blog.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Strategy</a>
+                </nav>
             </div>
-            <nav class="flex space-x-6 md:space-x-8">
-                <a id="nav-about-me" href="/about-me.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">About Me</a>
-                <a id="nav-repos" href="/repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
-                <a id="nav-strategy" href="/blog.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Strategy</a>
-            </nav>
         </div>
-    </div>
-</header>
+    </header>
 
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <article class="bg-white rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12">
-            
-            <div class="text-center mb-8">
-                                <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">GRC Framework</span>
-                                <h1 class="text-4xl font-extrabold text-gray-900 leading-tight">
-                    The Integrity Protocol Framework: Diagnosing the Systemic Breakdown
-                </h1>
-                                <p class="text-md text-gray-500 mt-2">Published: October 3, 2025 by The Integrity Protocol</p>
-            </div>
 
-            <div class="article-content border-t pt-8">
-                
-                                <div class="my-8 rounded-xl overflow-hidden shadow-lg">
-                                        <img src="/assets/images/integrity-breakdown.png" 
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+        <article class="bg-white rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12">
+            
+            <div class="text-center mb-8">
+                <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">AI Governance & Strategy</span>
+                <h1 class="text-4xl font-extrabold text-gray-900 leading-tight">
+                    The Integrity Protocol Framework: Diagnosing the Systemic Breakdown
+                </h1>
+                <p class="text-md text-gray-500 mt-2">Published: October 3, 2025 by The Integrity Protocol</p>
+            </div>
+
+
+
+            
+            <div class="article-content border-t pt-8">
+                
+                <div class="my-8 rounded-xl overflow-hidden shadow-lg">
+                    <img src="/assets/images/TIPLOGOFIN.png" 
                         alt="A visual metaphor for a systemic failure, perhaps a complex, broken clockwork mechanism." 
                         class="w-full h-auto object-cover">
                 </div>
-                                <figcaption class="mt-3 text-center text-sm text-gray-500 mb-8">
+                <figcaption class="mt-3 text-center text-sm text-gray-500 mb-8">
                     The "Integrity Gap" is a symptom of broken strategic prioritisation, not a technical flaw.
                 </figcaption>
                 
                                                 <h2>Introduction to the Core Concept</h2>
                 <p>
-                    The difference between a policy on paper and controls in production is the <strong>'Integrity Gap'</strong>. In our last post, we dissected a major data breach&amp;mdash;an event caused by a simple technical flaw: an unauthenticated API. As GRC practitioners, we can’t stop there. An exposed API isn't the root cause; it’s a symptom of a profound, systemic failure in governance.
+                    The difference between a policy on paper and controls in production is the <strong>'Integrity Gap'</strong>. In the last post, I dissected a major data breach, an event caused by a simple technical flaw: an unauthenticated API. As GRC practitioners, we can’t stop there. An exposed API isn't the root cause; it’s a symptom of a profound, systemic failure in governance.
                 </p>
                 <p>
-                    If my Integrity Protocol Framework&amp;mdash;built on the triad of <strong>Minimisation</strong>, <strong>Security</strong>, and <strong>Accountability</strong>&amp;mdash;is the blueprint for digital trust, then the breach case study is a diagnostic X-ray of how that blueprint failed at the executive level. The failure was not one of code, but of <strong>strategic prioritisation</strong>.
+                    If my Integrity Protocol Framework (built on the triad of <strong>Minimisation</strong>, <strong>Security</strong>, and <strong>Accountability</strong>) is the blueprint for digital trust, then the breach case study is a diagnostic X-ray of how that blueprint failed at the executive level. The failure was not one of code, but of <strong>strategic prioritisation</strong>.
                 </p>
 
                 <hr>
@@ -171,51 +176,53 @@
                 </p>
                 <p>
                     <strong>Next time</strong>, I'll be sharing the final, critical step in my plan: the <strong>Executive Risk Communication Simulation</strong>, where I will practice presenting a solution to these failures in a language worthy of the C-suite.
-                </p>
+                </p>
 
-                 <a href="/blog.html" class="inline-flex items-center mt-6 text-indigo-600 hover:text-indigo-800 font-medium">
+                <a href="/blog.html" class="inline-flex items-center mt-6 text-indigo-600 hover:text-indigo-800 font-medium">
                     <i class="fas fa-arrow-left mr-2"></i> Back to All Posts
                 </a>
-            </div>
-        </article>
-    </main>
+            </div>
+        </article>
+    </main>
 
-            <footer class="bg-gray-800 text-white mt-10">
+    <!-- FOOTER SECTION CHANGES -->
+    <footer class="bg-gray-800 text-white mt-10">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
             <!-- 3. Copyright update: Changed name to 'The Integrity Protocol' -->
             <p>&copy; 2025 The Integrity Protocol. All rights reserved.</p>
         </div>
     </footer>
     
-        <script>
-        function setActiveLink() {
-            const path = window.location.pathname;
-            let activeLink;
+    <script>
+        function setActiveLink() {
+            const path = window.location.pathname;
+            let activeLink;
 
-            // This logic correctly highlights the 'Strategy' link when viewing a blog post (in a subdirectory).
-            if (path.includes('/blog.html') || path.includes('/[POST_FILENAME]')) { // You might need to add a check for the current file name if you nest them
-                activeLink = 'nav-strategy';
-            } else if (path.includes('/repos.html')) {
-                activeLink = 'nav-repos';
-            } else if (path.includes('/about-me.html') || path === '/' || path.includes('/index.html')) {
-                activeLink = 'nav-about-me';
-            }
+            // Define which page path matches which nav ID
+            if (path.includes('/repos.html')) {
+                activeLink = 'nav-repos';
+            } else if (path.includes('/blog.html')) {
+                activeLink = 'nav-strategy';
+            } else if (path.includes('/about-me.html') || path === '/' || path.includes('/index.html')) {
+                // Treats index.html or the root path (/) as the 'About Me' page
+                activeLink = 'nav-about-me';
+            }
 
-            if (activeLink) {
-                const element = document.getElementById(activeLink);
-                if (element) {
-                    // Remove the default, inactive classes
-                    element.classList.remove('text-gray-600', 'hover:text-indigo-600');
-                    
-                    // Add the active, highlighted classes
-                    element.classList.add('text-indigo-600', 'font-semibold', 'border-b-2', 'border-indigo-600');
-                }
-            }
-        }
-        
-        // Run the function when the page loads
-        setActiveLink();
-    </script>
+            if (activeLink) {
+                const element = document.getElementById(activeLink);
+                if (element) {
+                    // Remove the default, inactive classes
+                    element.classList.remove('text-gray-600', 'hover:text-indigo-600');
+                    
+                    // Add the active, highlighted classes
+                    element.classList.add('text-indigo-600', 'font-semibold', 'border-b-2', 'border-indigo-600');
+                }
+            }
+        }
+        
+        // Run the function when the page loads
+        setActiveLink();
+    </script>
 
 
 </body>
