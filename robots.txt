@@ -1,0 +1,4 @@
+Block all search engines from indexing the 'private-assets' folder
+This is where my un-indexed images should be stored.
+User-agent: *
+Disallow: /private-assets/
