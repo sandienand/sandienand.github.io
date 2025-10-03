@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Data Breach Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
+        .article-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #1f2937; }
+        .article-content p { line-height: 1.75; margin-bottom: 1rem; color: #4b5563; }
+        .article-content strong { font-weight: 600; color: #111827; }
+        .article-content blockquote { border-left: 4px solid #4f46e5; padding-left: 1rem; margin-left: 0; font-style: italic; color: #6b7280; }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-xl font-bold text-gray-800 tracking-wide">Sandie Nand (Integrity Protocol)</a>
+                </div>
+                <nav class="flex space-x-6 md:space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Resume</a>
+                    <a href="repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
+                    <a href="blog.html" class="text-indigo-600 font-semibold transition duration-150 ease-in-out border-b-2 border-indigo-600">Blog</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Article Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+        <article class="bg-white rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12">
+            <div class="text-center mb-8">
+                <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">Cyber Security</span>
+                <h1 class="text-4xl font-extrabold text-gray-900 leading-tight">The Big Data Breach: When Technical Failures Become Governance Failures</h1>
+                <p class="text-md text-gray-500 mt-2">Published: September 1, 2025 by The Integrity Protocol</p>
+            </div>
+
+            <div class="article-content border-t pt-8">
+                <h2>Case Summary: Exposed Data</h2>
+                <p>In September 2022, one of Australia's largest telco's suffered a major data breach affecting nearly 10 million customers. Personal details (names, addresses, birth dates, phone numbers, passport/driver's license info) were exposed. The breach stemmed from an exposed API (a gateway for data) that did not require authentication.</p>
+
+                <h2>The Integrity Gap: Where Did Things Break Down?</h2>
+                <p>The failure was multi-layered, highlighting gaps across the entire organisation:</p>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Technical Integrity:</strong> Sensitive customer data was sitting behind an API without proper authentication—like leaving the vault door ajar.</li>
+                    <li><strong>Organisational Integrity:</strong> The telco claimed to follow "best practice security," but the breach revealed a profound gap between policy on paper and controls in practice.</li>
+                    <li><strong>Governance Integrity:</strong> Responsibility was diffused. Who inside the telco owned the risk? Who was accountable for enforcing data minimisation and security?</li>
+                </ul>
+                <p class="mt-4">This is the heart of governance: security isn't just about firewalls; it's about aligning responsibility, accountability, and action across the board.</p>
+                
+                <a href="blog.html" class="inline-flex items-center mt-6 text-indigo-600 hover:text-indigo-800 font-medium">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to All Posts
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-10">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Sandie Nand. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
