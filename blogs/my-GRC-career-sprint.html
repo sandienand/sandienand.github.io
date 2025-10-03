@@ -59,26 +59,34 @@
     </style>
 </head>
 <body class="antialiased">
-    <!-- Header -->
-    <!-- Header -->
-        <header class="bg-white shadow-lg sticky top-0 z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0">
-                    <!-- Logo links to the index page -->
-                    <a href="/index.html" class="text-xl font-bold text-gray-800 tracking-wide">
-                        <img src="/assets/images/TIPLOGOFIN.png" alt="The Integrity Protocol Logo" class="h-8 w-auto">
-                    </a>
-                </div>
-                <nav class="flex space-x-6 md:space-x-8">
-                    <!-- Links use a base style and an ID for dynamic active highlighting -->
-                    <a id="nav-about-me" href="/about-me.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">About Me</a>
-                    <a id="nav-repos" href="/repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
-                    <a id="nav-strategy" href="/blog.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Strategy</a>
-                </nav>
+<header class="bg-white shadow-lg sticky top-0 z-10 **h-16**">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- 
+            The inner div already uses h-16, but adding h-16 to the header 
+            ensures the space is reserved before the content loads, 
+            eliminating the scroll or creep.
+        -->
+        <div class="flex justify-between items-center h-16">
+            <div class="flex-shrink-0">
+                <!-- 
+                    PATH CORRECTION: Reverting to ABSOLUTE paths (starting with /) 
+                    for standard deployment setups (like GitHub Pages root). 
+                    If this is a local file structure test, this may need to be reverted to '../'.
+                -->
+                <a href="/index.html" class="text-xl font-bold text-gray-800 tracking-wide">
+                    <img src="/assets/images/TIPLOGOFIN.png" alt="The Integrity Protocol Logo" class="h-8 w-auto" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/320x80/4338ca/ffffff?text=Integrity+Protocol+Logo';">
+                </a>
             </div>
+            <nav class="flex space-x-6 md:space-x-8">
+                <!-- Links now use standard absolute paths for consistency -->
+                <a id="nav-about-me" href="/about-me.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">About Me</a>
+                <a id="nav-repos" href="/repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
+                <a id="nav-strategy" href="/blog.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Strategy</a>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
 
 
     <!-- Main Article Content -->
