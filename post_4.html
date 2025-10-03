@@ -3,68 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Integrity Protocol Framework</title>
+    <title>The Integrity Protocol Framework: A Practical Guide to Digital Trust | The Integrity Protocol</title>
+    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
-        .article-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #1f2937; }
-        .article-content p { line-height: 1.75; margin-bottom: 1rem; color: #4b5563; }
-        .article-content strong { font-weight: 600; color: #111827; }
-        .article-content blockquote { border-left: 4px solid #4f46e5; padding-left: 1rem; margin-left: 0; font-style: italic; color: #6b7280; }
+        /* Apply Inter font and clean typography styles */
+        html { font-family: 'Inter', sans-serif; }
+        .blog-content h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.75rem; /* text-2xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937; /* text-gray-800 */
+        }
+        .blog-content h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600; /* font-semibold */
+            color: #374151; /* text-gray-700 */
+        }
+        .blog-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.75;
+            color: #4b5563; /* text-gray-600 */
+        }
+        .blog-content strong {
+            font-weight: 700;
+            color: #1f2937;
+        }
+        .principle-box {
+            border-left: 4px solid #4f46e5; /* indigo-600 */
+        }
     </style>
 </head>
-<body class="antialiased">
-    <!-- Header -->
-    <header class="bg-white shadow-lg sticky top-0 z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="text-xl font-bold text-gray-800 tracking-wide">Sandie Nand (Integrity Protocol)</a>
-                </div>
-                <nav class="flex space-x-6 md:space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Resume</a>
-                    <a href="repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
-                    <a href="blog.html" class="text-indigo-600 font-semibold transition duration-150 ease-in-out border-b-2 border-indigo-600">Blog</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+<body class="bg-gray-50 min-h-screen">
 
-    <!-- Main Article Content -->
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <article class="bg-white rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12">
-            <div class="text-center mb-8">
-                <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">Framework</span>
-                <h1 class="text-4xl font-extrabold text-gray-900 leading-tight">The Integrity Protocol Framework</h1>
-                <p class="text-md text-gray-500 mt-2">Published: September 1, 2025 by The Integrity Protocol</p>
-            </div>
+    <div class="max-w-3xl mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <!-- Header / Back to Index -->
+        <header class="py-6 border-b border-gray-200 mb-8">
+            <a href="blog.html" class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors">
+                <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back to Blog Index
+            </a>
+        </header>
 
-            <div class="article-content border-t pt-8">
-                <p class="font-semibold text-lg mb-6">WIP theory I hope to evolve. At the heart of ethical governance—whether in AI, data, or digital systems—lies a simple triad:</p>
+        <!-- Article Content -->
+        <article class="bg-white p-6 sm:p-10 rounded-xl shadow-2xl">
+            
+            <!-- Post Meta -->
+            <p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">AI Governance & Strategy</p>
+            <p class="text-gray-400 text-sm mb-1">The Integrity Protocol | September 1, 2025</p>
 
-                <h2>1. Hold Only What You Must</h2>
-                <p><strong>Principle:</strong> Minimise collection and retention.</p>
-                <p><strong>Why:</strong> Every piece of data you collect becomes a liability as much as an asset. The less you hold, the smaller the attack surface, the lower the compliance burden, and the greater the respect for individual autonomy.</p>
-                <p><strong>Application:</strong> In data privacy, this means collecting only the information essential to deliver a service. In governance, it means avoiding the construction of systems that hoard "just in case" information.</p>
+            <!-- Main Title -->
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                The Integrity Protocol Framework: A Practical Guide to Digital Trust
+            </h1>
 
-                <h2>2. Secure What You Hold</h2>
-                <p><strong>Principle:</strong> Responsibility does not end at collection; it begins there.</p>
-                <p><strong>Why:</strong> Trust depends on stewardship. Failing to secure what you've taken stewardship of—data, algorithms, or decisions—means betraying both your users and your mandate.</p>
+            <hr class="mb-8 border-t-2 border-indigo-100">
+            
+            <!-- --- IMAGE INSERTION START: Placeholder Image --- -->
+            <figure class="mb-8">
+                <img src="https://placehold.co/1200x600/374151/ffffff?text=The+Triad+of+Digital+Trust" 
+                     alt="A conceptual image of three interlocking gears representing data minimisation, security, and accountability."
+                     class="w-full h-auto rounded-xl shadow-lg border border-gray-100 object-cover"
+                     loading="lazy">
+                <figcaption class="mt-3 text-center text-sm text-gray-500">
+                    WIP theory I hope to evolve. The core triad of GRC is about integrity in design, process, and disclosure.
+                </figcaption>
+            </figure>
+            <!-- --- IMAGE INSERTION END --- -->
+
+            <!-- Post Body -->
+            <div class="blog-content text-lg">
                 
-                <a href="blog.html" class="inline-flex items-center mt-6 text-indigo-600 hover:text-indigo-800 font-medium">
-                    <i class="fas fa-arrow-left mr-2"></i> Back to All Posts
-                </a>
-            </div>
-        </article>
-    </main>
+                <p>
+                    In the last post, I explained why I’m pivoting from the automatable execution of compliance to the non-automatable governance of technology. If we're to succeed in the age of AI, we need a simple, bedrock set of principles.
+                </p>
+                <p>
+                    At the heart of ethical governance—whether in AI, data, or digital systems—lies a simple triad. This is the <strong>The Integrity Protocol Framework</strong>. It is designed to shift the focus from reactive damage control to proactive, defensible system design.
+                </p>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white mt-10">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2025 Sandie Nand. All rights reserved.</p>
-        </div>
-    </footer>
+                <h2>Principle 1: Hold Only What You Must</h2>
+                <div class="principle-box p-4 bg-indigo-50 rounded-r-lg mb-6">
+                    <p class="text-gray-800 font-semibold italic">
+                        The less data you hold, the smaller your attack surface, the lower your compliance burden, and the greater the respect for individual autonomy.
+                    </p>
+                </div>
+                
+                <h3>Core Idea: Minimise Collection and Retention</h3>
+                <ul class="list-disc list-inside space-y-2 pl-4 mb-6 text-gray-700">
+                    <li><strong>In Data Privacy:</strong> Collect only the information essential to deliver a service. Avoid the temptation to harvest data that is ‘nice to have’ or may be useful in the future.</li>
+                    <li><strong>In AI/Machine Learning:</strong> Train models only on data that is necessary, justified, and ethically sourced. Over-indexing on unnecessary data increases the risk of bias contamination.</li>
+                    <li><strong>In Governance:</strong> Avoid building systems that hoard “just in case” information. Challenge every data field with the question: <strong>"What is the operational necessity for this?"</strong>strong></li>
+                </ul>
+
+                <h2>Principle 2: Secure What You Hold</h2>
+                <div class="principle-box p-4 bg-indigo-50 rounded-r-lg mb-6">
+                    <p class="text-gray-800 font-semibold italic">
+                        Responsibility does not end at collection; it begins there. Trust depends entirely on diligent stewardship.
+                    </p>
+                </div>
+                
+                <h3>Core Idea: Diligent Stewardship and Protection</h3>
+                <ul class="list-disc list-inside space-y-2 pl-4 mb-6 text-gray-700">
+                    <li><strong>Protect Against Exposure:</strong> Failing to secure data—algorithms, or decision logic—means betraying both your users and your mandate. This goes beyond firewalls; it includes managing APIs, securing internal access, and enforcing least-privilege access.</li>
+                    <li><strong>Test and Validate:</strong> Security isn’t a one-time setup; it’s a continuous, adversarial process. Your internal governance must demand regular, rigorous penetration testing, red-teaming, and architecture reviews.</li>
+                    <li><strong>Implement Granular Controls:</strong> Apply different levels of security based on data sensitivity. Tokenisation, encryption, and anonymisation must be mandated at the policy level for high-risk data sets.</li>
+                </ul>
+
+                <h2>Principle 3: Demonstrate Accountability</h2>
+                <div class="principle-box p-4 bg-indigo-50 rounded-r-lg mb-6">
+                    <p class="text-gray-800 font-semibold italic">
+                        Integrity is not a claim; it is a demonstrable state. All critical decisions must be auditable, explainable, and justifiable.
+                    </p>
+                </div>
+                
+                <h3>Core Idea: Transparency and Explainability</h3>
+                <ul class="list-disc list-inside space-y-2 pl-4 mb-6 text-gray-700">
+                    <li><strong>Auditability by Design:</strong> Every significant action by a system, whether automated or human, must leave a clear, immutable audit trail. This is the only way to reconstruct events after an incident or to prove compliance before an audit.</li>
+                    <li><strong>Explainability (XAI):</strong> For AI systems, especially those making high-impact decisions (e.g., credit scores, insurance), you must be able to explain the ‘why’ behind the outcome. If you can’t explain an algorithmic decision, you can’t govern it.</li>
+                    <li><strong>Clear Ownership:</strong> Accountability cannot be diffused. Organisational policy must clearly name the individual or role responsible for the design, maintenance, and ultimate risk of every digital system.</li>
+                </ul>
+                
+                <h2>Building Digital Trust</h2>
+                <p>
+                    These three principles—Minimisation, Security, and Accountability—form a self-reinforcing loop. By holding only what we must, we simplify the challenge of security. By securing what we hold, we prove our trustworthiness. And by demonstrating accountability, we build the public trust necessary for the adoption of sophisticated technology like AI.
+                </p>
+                <p>
+                    Next time, I'll be sharing a more personal update on my GRC career sprint, diving into the adaptive plan I've put in place to acquire the technical skills needed to live up to this framework.
+                </p>
+
+            </div>
+
+        </article>
+        
+        <!-- Footer / Placeholder for Navigation -->
+        <footer class="mt-12 pt-6 text-center text-gray-500 border-t border-gray-200">
+            <p class="text-sm">
+                &copy; 2025 The Integrity Protocol. All Rights Reserved.
+            </p>
+        </footer>
+
+    </div>
+
 </body>
 </html>
