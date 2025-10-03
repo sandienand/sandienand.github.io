@@ -3,176 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandie Nand | GRC, Cyber Security & Python</title>
+    <title>The Integrity Protocol | GRC for the AI Era</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for Icons (using reliable CDN link to fix preview errors) -->
-    <!-- Fixed integrity attribute for clean loading -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1R0T10oJgKK8UQKzS9kfa8i0eKqjG/AkkkR3f0tH/A1Yh9jQfH/9v5U0bF9E1W5E0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Load Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        /* Custom font import and application */
+        /* Apply Inter font and clean typography styles */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f4f6f9;
+        body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
+        
+        /* Custom gradient for the hero section background */
+        .hero-bg {
+            background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, #f4f6f9 100%);
         }
-        /* Custom class for bolding within list items without HTML tags */
-        .list-header {
-            font-weight: 600; /* Equivalent to font-semibold in Tailwind */
-            color: #111827; /* Darker text for emphasis */
+        
+        /* Custom focus state for better accessibility/UI */
+        .cta-button:focus {
+            outline: 3px solid rgba(79, 70, 229, 0.5); /* Indigo-600 with transparency */
+            outline-offset: 2px;
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- Header / Navigation Bar -->
+    <!-- Header: Sticky Navigation -->
     <header class="bg-white shadow-lg sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo/Site Title -->
                 <div class="flex-shrink-0">
-                    <a href="index.html" class="text-xl font-bold text-gray-800 tracking-wide">
-                        Sandie Nand (Integrity Protocol)
-                    </a>
+                    <a href="index.html" class="text-2xl font-extrabold text-indigo-700 tracking-wider">The Integrity Protocol</a>
                 </div>
-                <!-- Navigation Links -->
                 <nav class="flex space-x-6 md:space-x-8">
-                    <a href="index.html" class="text-indigo-600 font-semibold transition duration-150 ease-in-out border-b-2 border-indigo-600">Resume</a>
-                    <a href="repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
-                    <a href="blog.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Blog</a>
+                    <a href="#about-me" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">About Me</a>
+                    <a href="repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Portfolio</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">Strategy</a>
+                    <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium hidden sm:inline">Contact</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Main Resume Container -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <div class="bg-white rounded-2xl shadow-xl overflow-hidden p-6 sm:p-10 lg:p-12">
+    <!-- 1. Hero Section: Immediate Value Proposition -->
+    <section class="hero-bg py-20 md:py-32">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             
-            <!-- Profile Header -->
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b pb-6 mb-8">
-                <div>
-                    <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">Sandie Nand</h1>
-                    <p class="text-xl text-indigo-600 mt-1">GRC Leadership Pipeline | Cyber Security & Compliance Specialist</p>
-                    <div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-gray-600">
-                        <span><i class="fas fa-map-marker-alt mr-2"></i>Melbourne, VIC</span>
-                        <a href="https://github.com/sandienand" target="_blank" class="hover:text-gray-900 transition"><i class="fab fa-github mr-2"></i>GitHub/sandienand</a>
-                    </div>
-                </div>
-                <!-- Actual Profile Image (Replaced Mock Placeholder) -->
-                <div class="mt-4 md:mt-0 w-24 h-24 flex-shrink-0">
-                    <img 
-                        src="uploaded:1698651141960.jpg-3d05ff03-b2b0-4285-bdae-d0aa63525e02" 
-                        alt="Sandie Nand Professional Headshot"
-                        class="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
-                        onerror="this.onerror=null; this.src='https://placehold.co/96x96/6366f1/ffffff?text=SN';"
-                    >
-                </div>
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-semibold px-4 py-1 rounded-full mb-4 tracking-wide">
+                GRC Leadership for the AI Era
+            </span>
+
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
+                Building Auditable Compliance for AI Systems.
+            </h1>
+            
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                I translate ambiguous regulations into auditable, ethical design principles. Moving from financial risk mitigation (AML/KYC) to leading governance for autonomous systems.
+            </p>
+
+            <!-- Main CTA - Direct to Strategy/Blog (New Focus) -->
+            <div class="flex justify-center space-x-4">
+                <a href="blog.html" class="cta-button inline-flex items-center px-8 py-3 border border-transparent text-lg font-bold rounded-xl shadow-lg text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.02]">
+                    <i class="fas fa-microscope mr-3"></i> View My Strategy & Vision
+                </a>
             </div>
-
-            <!-- Summary -->
-            <section class="mb-10">
-                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-500/50 pb-2 mb-4">Professional Summary</h2>
-                <p class="text-gray-700 leading-relaxed">
-                    A highly focused Regulatory Specialist actively transitioning into Governance, Risk, and Compliance (GRC) Leadership, driven by a deep understanding of legislative integrity, ethical accountability, and sophisticated risk assessment. Currently building technical fluency in Python for backend analysis and pursuing CISSP certification alongside a Cert III/IV in IT and Cyber Security. My experience lies in meticulous system navigation, high-stakes regulatory case management (KYC/AML), and ensuring 97% QA accuracy, providing a unique foundation for holistic GRC strategy development.
-                </p>
-            </section>
-
-            <!-- Key Skills -->
-            <section class="mb-10">
-                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-500/50 pb-2 mb-4">Technical & GRC Competencies</h2>
-                <div class="flex flex-wrap gap-3">
-                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">CISSP Exam Preparation</span>
-                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Python (Backend Analysis Focus)</span>
-                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">GRC & Legislative Compliance (RG146)</span>
-                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">High-Risk Case Management (KYC/AML)</span>
-                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Cert III/IV IT & Cyber Security (Studying)</span>
-                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">97% QA Accuracy & Audit Trail Integrity</span>
-                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Complex System Navigation (9+ Systems)</span>
-                </div>
-            </section>
-
-            <!-- Experience Placeholder -->
-            <section class="mb-10">
-                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-500/50 pb-2 mb-4">GRC & Regulatory Experience</h2>
-                <div class="space-y-6">
-                    <!-- Experience Item 1: Regulatory Case & Compliance Specialist -->
-                    <div class="relative pl-6 border-l-2 border-indigo-200">
-                        <div class="absolute -left-2 top-0 w-4 h-4 bg-indigo-600 rounded-full shadow-md"></div>
-                        <h3 class="text-xl font-semibold text-gray-900">Regulatory Case & Compliance Specialist</h3>
-                        <p class="text-indigo-500 font-medium">Westpac Banking Group (Sydney, NSW)</p>
-                        <p class="text-sm text-gray-500 mb-2">May 2018 - August 2023</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
-                            <li><span class="list-header">Risk Mitigation:</span> Managed high-risk regulatory cases (KYC/AML) and executed intervention planning based on meticulous legislative interpretation.</li>
-                            <li><span class="list-header">System Integrity:</span> Successfully navigated and integrated demands across nine disparate information systems (including Hogan and SAP) to streamline case file processing.</li>
-                            <li><span class="list-header">Accountability:</span> Led a major regulatory remediation project, achieving a 97% quality assurance rate against an 80% mandated target for case file record integrity.</li>
-                        </ul>
-                    </div>
-                    <!-- Experience Item 2: Digital Asset Integrity Project (Connecting Code to GRC) -->
-                    <div class="relative pl-6 border-l-2 border-indigo-200">
-                        <div class="absolute -left-2 top-0 w-4 h-4 bg-indigo-600 rounded-full shadow-md"></div>
-                        <h3 class="text-xl font-semibold text-gray-900">Technical Competency & Integrity Protocol Deployment</h3>
-                        <p class="text-indigo-500 font-medium">Self-Directed Learning & Application</p>
-                        <p class="text-sm text-gray-500 mb-2">2024 - Present</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
-                            <li><span class="list-header">Backend Understanding:</span> Actively learning Python to enable more holistic suggestions and bridge compliance requirements with technical architecture in a future GRC role.</li>
-                            <li><span class="list-header">Digital Governance:</span> Established, deployed, and managed this custom domain static site on GitHub Pages using Cloudflare, demonstrating hands-on control over DNS, security, and hosting integrity.</li>
-                            <li><span class="list-header">Continuous Learning:</span> Formal study includes Cert III/IV in IT and Cyber Security and intensive preparation for the CISSP exam to solidify technical GRC expertise.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
             
-            <!-- Education & Certifications -->
-             <section class="mb-10">
-                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-500/50 pb-2 mb-4">Education & Certifications</h2>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3 class="font-semibold text-gray-900">CISSP (Certified Information Systems Security Professional)</h3>
-                            <p class="text-gray-700">Exam Preparation underway</p>
-                        </div>
-                        <p class="text-sm text-gray-500">2025</p>
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3 class="font-semibold text-gray-900">Cert III/IV in IT and Cyber Security</h3>
-                            <p class="text-gray-700">Currently Studying</p>
-                        </div>
-                        <p class="text-sm text-gray-500">2025</p>
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3 class="font-semibold text-gray-900">RG146 Tier 2 Personal Advice Accreditation</h3>
-                            <p class="text-gray-700">Commonwealth Bank of Australia</p>
-                        </div>
-                        <p class="text-sm text-gray-500">2018</p>
-                    </div>
-                </div>
-            </section>
-
-            
-            <!-- Call to Action Footer -->
-            <div class="mt-12 text-center pt-8 border-t">
-                <p class="text-lg text-gray-700 mb-4">Explore the foundation of my technical and GRC learning journey.</p>
-                <div class="flex justify-center gap-4">
-                    <a href="repos.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105">
-                        View Code Portfolio
-                    </a>
-                    <a href="blog.html" class="inline-flex items-center px-6 py-3 border border-indigo-600 text-base font-medium rounded-lg text-indigo-700 bg-white hover:bg-indigo-50 transition duration-300 ease-in-out transform hover:scale-105">
-                        Read My Blog
-                    </a>
-                </div>
+            <!-- Optional: Trust/Integrity Badge -->
+            <div class="mt-12 text-gray-500 text-sm italic">
+                Optimising for <strong class="text-indigo-600">Integrity over Inertia</strong>.
             </div>
 
         </div>
-    </main>
+    </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white mt-10">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2025 Sandie Nand. All rights reserved.</p>
+    <!-- 2. Core Pillars / Navigation Cards - REORDERED FOR CREDIBILITY FIRST -->
+    <section id="pillars" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">The Three Pillars of My Transition</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Pillar 1: About Me (The Who) - Professional Rigour & Leadership -->
+                <div id="about-me" class="bg-gray-50 p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500 transform hover:-translate-y-1">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-user-tie fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Proven Compliance Leadership</h3>
+                    <p class="text-gray-600 mb-6">
+                        My background leading teams in (AML/KYC) and compliance—experience necessary to drive institutional change and implement policy effectively.
+                    </p>
+                    <a href="about-me.html" class="text-indigo-600 font-semibold hover:text-indigo-800 transition duration-150">
+                        Read the About Me Page <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Pillar 2: Strategy (The Why) - Strategic Vision & Compliance -->
+                <div class="bg-gray-50 p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500 transform hover:-translate-y-1">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-blog fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Strategic Vision & Compliance</h3>
+                    <p class="text-gray-600 mb-6">
+                        Read "The Integrity Protocol" blog series covering the strategic necessity of moving from reactive compliance to proactive AI governance.
+                    </p>
+                    <a href="blog.html" class="text-indigo-600 font-semibold hover:text-indigo-800 transition duration-150">
+                        Read the Strategy Series <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Pillar 3: Portfolio (The How) - Technical Fluency & Design -->
+                <div class="bg-gray-50 p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500 transform hover:-translate-y-1">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-code fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Technical Fluency & Design</h3>
+                    <p class="text-gray-600 mb-6">
+                        From Power Automate optimisations to Python-driven data analysis, see the practical skills I use to build governance into systems.
+                    </p>
+                    <a href="repos.html" class="text-indigo-600 font-semibold hover:text-indigo-800 transition duration-150">
+                        View Code Portfolio <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- 3. GRC/AI Governance Mission Statement -->
+    <section id="mission" class="bg-indigo-700 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">
+                The GRC of Tomorrow is the Design of Today.
+            </h2>
+            <p class="text-lg font-light opacity-90 mb-8">
+                The challenge isn't just managing the risks of AI, it's defining the ethical framework and auditable architecture that lets it succeed responsibly. My mission is to ensure <strong>technological integrity</strong> is the default, not an afterthought.
+            </p>
+            <a href="blog.html" class="inline-flex items-center px-6 py-2 border border-white text-md font-semibold rounded-xl text-white hover:bg-white hover:text-indigo-700 transition duration-300">
+                <i class="fas fa-cogs mr-2"></i> See My GRC Strategy
+            </a>
+        </div>
+    </section>
+
+    <!-- 4. Footer & Contact -->
+    <footer id="contact" class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
+                
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h4 class="text-xl font-bold text-indigo-400 mb-2">Sandie Nand</h4>
+                    <p class="text-sm text-gray-400">Governance, Risk, and Compliance for AI.</p>
+                </div>
+
+                <div class="space-x-4">
+                    <!-- Placeholder links for professional social media -->
+                    <a href="https://linkedin.com/in/sandienand" target="_blank" class="text-gray-400 hover:text-indigo-400 transition duration-150" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/sandienand" target="_blank" class="text-gray-400 hover:text-indigo-400 transition duration-150" aria-label="GitHub Repository">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-gray-700 text-center">
+                <p class="text-xs text-gray-500">
+                    &copy; 2025 The Integrity Protocol. All rights reserved.
+                </p>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>
