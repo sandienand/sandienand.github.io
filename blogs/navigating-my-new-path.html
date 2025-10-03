@@ -3,102 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigating My New Path: A Flexible Plan for GRC Leadership | The Integrity Protocol</title>
-    <!-- Load Tailwind CSS -->
+    <title>Navigating My New Path: A Flexible Plan for GRC Leadership</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        /* Apply Inter font and clean typography styles */
-        html { font-family: 'Inter', sans-serif; }
-        .blog-content h2 {
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-size: 1.75rem; /* text-2xl */
-            font-weight: 700; /* font-bold */
-            color: #1f2937; /* text-gray-800 */
+        /* Import Inter font and set base styles */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
+        
+        /* Custom styles for article content for better readability - MATCHING TARGET TEMPLATE */
+        .article-content h2 { 
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700; 
+            margin-top: 2.5rem; 
+            margin-bottom: 1rem; 
+            color: #1f2937; /* Gray-800 */
         }
-        .blog-content h3 {
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
+        .article-content h3 { 
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 600; 
+            margin-top: 2rem; 
+            margin-bottom: 0.75rem; 
+            color: #374151; /* Gray-700 */
+            border-bottom: 2px solid #e5e7eb; /* Subtle line for separation */
+            padding-bottom: 0.25rem;
+        }
+        .article-content h4 { /* Used for Phase Headings inside the cards to distinguish them */
             font-size: 1.25rem; /* text-xl */
-            font-weight: 600; /* font-semibold */
-            color: #374151; /* text-gray-700 */
+            font-weight: 700; 
+            margin-top: 0.5rem; /* Reduced margin to fit better in the card */
+            margin-bottom: 0.5rem; 
+            color: #4f46e5; /* Indigo-600 accent */
         }
-        .blog-content p {
-            margin-bottom: 1.5rem;
-            line-height: 1.75;
-            color: #4b5563; /* text-gray-600 */
+        .article-content p, .article-content li { 
+            line-height: 1.75; 
+            margin-bottom: 1rem; 
+            color: #4b5563; /* Gray-600 */
         }
-        .blog-content strong {
-            font-weight: 700;
-            color: #1f2937;
+        .article-content strong { 
+            font-weight: 600; 
+            color: #111827; /* Gray-900 */
         }
+        .article-content ul, .article-content ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .article-content ul {
+            list-style-type: disc;
+        }
+        .article-content ol {
+            list-style-type: decimal;
+        }
+        .article-content ul li, .article-content ol li {
+            margin-bottom: 0.5rem;
+        }
+        .article-content hr {
+            margin: 3rem 0;
+            border: 0;
+            border-top: 1px solid #d1d5db; /* Gray-300 */
+        }
+
+        /* Custom Card Style - simplified to match the overall aesthetic */
         .step-card {
-            background-color: #ffffff;
-            border: 1px solid #e5e7eb;
-            transition: transform 0.3s ease;
-        }
-        .step-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        /* Custom list style for skill stacking */
-        .skill-list {
-            list-style: none;
-            counter-reset: step;
-        }
-        .skill-list li::before {
-            counter-increment: step;
-            content: "Phase " counter(step) ": ";
-            font-weight: bold;
-            color: #4f46e5; /* indigo-600 */
-            margin-right: 0.5rem;
+            border: 1px solid #e5e7eb; /* Gray-200 */
         }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body class="antialiased">
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-xl font-bold text-gray-800 tracking-wide">Sandie Nand (Integrity Protocol)</a>
+                </div>
+                <nav class="flex space-x-6 md:space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Resume</a>
+                    <a href="repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
+                    <a href="blog.html" class="text-indigo-600 font-semibold transition duration-150 ease-in-out border-b-2 border-indigo-600">Blog</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <div class="max-w-3xl mx-auto p-4 sm:p-6 lg:p-8">
-        
-        <!-- Header / Back to Index -->
-        <header class="py-6 border-b border-gray-200 mb-8">
-            <a href="blog.html" class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors">
-                <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                </svg>
-                Back to Blog Index
-            </a>
-        </header>
-
-        <!-- Article Content -->
-        <article class="bg-white p-6 sm:p-10 rounded-xl shadow-2xl">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+        <article class="bg-white rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12">
             
-            <!-- Post Meta -->
-            <p class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">GRC Strategy & Personal Development</p>
-            <p class="text-gray-400 text-sm mb-1">The Integrity Protocol | September 24, 2025</p>
+            <div class="text-center mb-8">
+                <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">GRC Strategy & Personal Development</span>
+                <h1 class="text-4xl font-extrabold text-gray-900 leading-tight">
+                    Navigating My New Path: A Flexible Plan for GRC Leadership
+                </h1>
+                <p class="text-md text-gray-500 mt-2">Published: September 24, 2025 by The Integrity Protocol</p>
+            </div>
 
-            <!-- Main Title -->
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-                Navigating My New Path: A Flexible Plan for GRC Leadership
-            </h1>
-
-            <hr class="mb-8 border-t-2 border-indigo-100">
-            
-            <!-- --- IMAGE INSERTION START: Placeholder Image --- -->
-            <figure class="mb-8">
-                <!-- Using a standard placeholder and alt text based on user request "private-assets/new-pathway.jpg" and PDF description -->
-                <img src="/assets/images/new-pathway.jpg" 
-                     alt="A dynamic visual showing a path transforming into a circuit board leading to a tree of diverse skills."
-                     class="w-full h-auto rounded-xl shadow-lg border border-gray-100 object-cover"
-                     loading="lazy">
-                <figcaption class="mt-3 text-center text-sm text-gray-500">
+            <div class="article-content border-t pt-8">
+                
+                <div class="my-8 rounded-xl overflow-hidden shadow-lg">
+                    <img src="/assets/images/new-pathway.jpg" 
+                        alt="A dynamic visual showing a path transforming into a circuit board leading to a tree of diverse skills." 
+                        class="w-full h-auto object-cover">
+                </div>
+                <figcaption class="mt-3 text-center text-sm text-gray-500 mb-8">
                     A dynamic visual showing a path transforming into a circuit board leading to a tree of diverse skills.
                 </figcaption>
-            </figure>
-            <!-- --- IMAGE INSERTION END --- -->
-
-            <!-- Post Body -->
-            <div class="blog-content text-lg">
-                
                 <p>
                     Hi, all. Following the deep dive into the massive data breach (Post 3), I’m excited to share a deeper look into the 'how' of my pivot into Governance, Risk, and Compliance (GRC) leadership. This isn't a sudden career change; it's a strategic evolution.
                 </p>
@@ -109,6 +116,8 @@
                     As someone with ADHD, I know a rigid plan is often a recipe for burnout. My approach is designed to be <strong>constructively adaptable</strong>, ensuring curiosity fuels my momentum without derailing my ultimate objective: GRC leadership in the age of AI. I need to manage my energy, not just my time.
                 </p>
 
+                <hr>
+
                 <h2>The Three-Part Flexible Strategy</h2>
                 <p>
                     The path is broken down into three phases, designed to be executed flexibly. If I lose focus on one area, I can pivot to another to maintain learning momentum, then circle back.
@@ -116,7 +125,7 @@
 
                 <div class="space-y-6 mb-8">
                     <div class="step-card p-6 rounded-xl shadow-md">
-                        <h3 class="mt-0 text-indigo-700">1. Foundational Deep Dive: Speaking the Language of Tech</h3>
+                        <h4 class="mt-0">Phase 1: Foundational Deep Dive: Speaking the Language of Tech</h4>
                         <p class="text-gray-600 m-0">
                             <strong>Goal:</strong> Gain <strong>technical literacy</strong> to credibly challenge engineers and interpret audit reports. This means understanding the core building blocks of modern systems, not becoming an expert coder.
                         </p>
@@ -128,7 +137,7 @@
                     </div>
 
                     <div class="step-card p-6 rounded-xl shadow-md">
-                        <h3 class="mt-0 text-indigo-700">2. Skill Layering: The GRC Automation Toolkit</h3>
+                         <h4 class="mt-0">Phase 2: Skill Layering: The GRC Automation Toolkit</h4>
                         <p class="text-gray-600 m-0">
                             <strong>Goal:</strong> Acquire practical skills to build <strong>automated governance controls</strong>—moving GRC from paper-based audits to digital monitoring.
                         </p>
@@ -140,7 +149,7 @@
                     </div>
 
                     <div class="step-card p-6 rounded-xl shadow-md">
-                        <h3 class="mt-0 text-indigo-700">3. Execution & Artifact Creation: Proving Competence</h3>
+                         <h4 class="mt-0">Phase 3: Execution & Artifact Creation: Proving Competence</h4>
                         <p class="text-gray-600 m-0">
                             <strong>Goal:</strong> Produce <strong>portfolio-ready work*</strong> that demonstrates competence in both governance and technical application.
                         </p>
@@ -151,6 +160,8 @@
                         </ul>
                     </div>
                 </div>
+
+                <hr>
 
                 <h2>Managing Energy, Not Time</h2>
                 <p>
@@ -167,19 +178,18 @@
                 <p>
                     The next few posts will document my progress through the <strong>Foundational Deep Dive</strong>—the actual tools, concepts, and mental models I’m using. It's time to put policy into practice. Stay tuned!
                 </p>
-
+                
+                <a href="blog.html" class="inline-flex items-center mt-6 text-indigo-600 hover:text-indigo-800 font-medium">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to All Posts
+                </a>
             </div>
-
         </article>
-        
-        <!-- Footer / Placeholder for Navigation -->
-        <footer class="mt-12 pt-6 text-center text-gray-500 border-t border-gray-200">
-            <p class="text-sm">
-                &copy; 2025 The Integrity Protocol. All Rights Reserved.
-            </p>
-        </footer>
+    </main>
 
-    </div>
-
+    <footer class="bg-gray-800 text-white mt-10">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Sandie Nand. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
