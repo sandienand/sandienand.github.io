@@ -1,0 +1,76 @@
+/* assets/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+:root {
+    /* Brand Colours */
+    --brand-primary: #4f46e5;       /* Indigo-600 */
+    --brand-primary-hover: #3730a3; /* Indigo-800 */
+    --brand-accent-bg: #fff7ed;     /* Orange-50 (for callouts) */
+    --brand-accent-border: #f97316; /* Orange-500 */
+
+    /* Typography Colours */
+    --text-main: #4b5563;           /* Gray-600 */
+    --text-heading: #1f2937;        /* Gray-800 */
+    --text-bold: #111827;           /* Gray-900 */
+
+    /* Layout */
+    --bg-body: #f4f6f9;
+    --border-subtle: #e5e7eb;
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: var(--bg-body); 
+}
+
+.article-content h2 { 
+    font-size: 1.875rem; 
+    font-weight: 700; 
+    margin-top: 2.5rem; 
+    margin-bottom: 1rem; 
+    color: var(--text-heading); 
+}
+
+.article-content h3 { 
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    margin-top: 2rem; 
+    margin-bottom: 0.75rem; 
+    color: #374151; 
+    border-bottom: 2px solid var(--border-subtle); 
+    padding-bottom: 0.25rem;
+}
+
+.article-content h4 { 
+    font-size: 1.25rem; 
+    font-weight: 700; 
+    margin-top: 1.5rem; 
+    margin-bottom: 0.5rem; 
+    color: var(--brand-primary); 
+}
+
+.article-content p, .article-content li { 
+    line-height: 1.75; 
+    margin-bottom: 1rem; 
+    color: var(--text-main); 
+}
+
+.article-content strong { 
+    font-weight: 600; 
+    color: var(--text-bold); 
+}
+
+.article-content hr {
+    margin: 3rem 0;
+    border: 0;
+    border-top: 1px solid #d1d5db; 
+}
+
+/* Custom Callout Box using variables */
+.callout-box {
+    padding: 1rem;
+    background-color: var(--brand-accent-bg);
+    border-left: 4px solid var(--brand-accent-border);
+    border-radius: 0 0.75rem 0.75rem 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
