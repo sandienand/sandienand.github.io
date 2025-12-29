@@ -1,64 +1,32 @@
-/* assets/css/style.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
-
 :root {
-    /* Brand Colours */
-    --brand-primary: #4f46e5;       /* Indigo-600 */
-    --brand-primary-hover: #3730a3; /* Indigo-800 */
-    --brand-accent-bg: #fff7ed;     /* Orange-50 (for callouts) */
-    --brand-accent-border: #f97316; /* Orange-500 */
-
-    /* Typography Colours */
-    --text-main: #4b5563;           /* Gray-600 */
-    --text-heading: #1f2937;        /* Gray-800 */
-    --text-bold: #111827;           /* Gray-900 */
-
-    /* Layout */
+    --brand-primary: #4f46e5;
+    --brand-primary-hover: #3730a3;
+    --brand-accent-bg: #fff7ed;
+    --brand-accent-border: #f97316;
+    --text-main: #4b5563;
+    --text-heading: #1f2937;
+    --text-bold: #111827;
     --bg-body: #f4f6f9;
     --border-subtle: #e5e7eb;
 }
 
-body { 
-    font-family: 'Inter', sans-serif; 
-    background-color: var(--bg-body); 
-}
+body { font-family: 'Inter', sans-serif; background-color: var(--bg-body); }
 
+.article-content h1 { font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text-bold); }
 
-.article-content h2 { 
-    font-size: 1.875rem; 
-    font-weight: 700; 
-    margin-top: 1rem;    /* Reduced from 2.5rem */
-    margin-bottom: 0.5rem; /* Reduced from 1rem */
-    color: var(--text-heading); 
-}
+/* Reduced margin-top from 2.5rem to 1rem */
+.article-content h2 { font-size: 1.5rem; font-weight: 700; margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-heading); }
 
-.article-content h3 { 
-    font-size: 1.5rem; 
-    font-weight: 600; 
-    margin-top: 1rem;    /* Reduced from 2rem */
-    margin-bottom: 0.5rem; 
-    color: var(--text-heading); 
-    border-bottom: 2px solid var(--border-subtle); 
-    padding-bottom: 0.1rem;
-}
+/* Tightened paragraph spacing from 1rem to 0.75rem */
+.article-content p, .article-content li { line-height: 1.6; margin-bottom: 0.75rem; color: var(--text-main); }
 
-.article-content p, .article-content li { 
-    line-height: 1.6;    /* Slightly tighter line spacing */
-    margin-bottom: 0.75rem; /* Reduced from 1rem */
-    color: var(--text-main); 
-}
+/* Minimalist horizontal rule */
+.article-content hr { margin: 1.5rem 0; border: 0; border-top: 1px solid var(--border-subtle); }
 
-.article-content hr {
-    margin: 1.5rem 0;    /* Reduced from 3rem */
-    border: 0;
-    border-top: 1px solid var(--border-subtle); 
-}
-
-/* Custom Callout Box using variables */
 .callout-box {
     padding: 1rem;
     background-color: var(--brand-accent-bg);
     border-left: 4px solid var(--brand-accent-border);
     border-radius: 0 0.75rem 0.75rem 0;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
 }
