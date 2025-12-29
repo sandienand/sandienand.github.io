@@ -1,203 +1,1084 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>The Integrity Protocol Framework: Diagnosing the Systemic Breakdown</title> 
+
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+
+    <link rel="stylesheet" href="/assets/css/style.css"> 
+
+</head> 
+
+<body class="antialiased"> 
+
+    <!-- HEADER SECTION CHANGES --> 
+
+    <header class="bg-white shadow-lg sticky top-0 z-10"> 
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+
+            <div class="flex justify-between items-center h-16"> 
+
+                <div class="flex-shrink-0"> 
+
+                    <!-- Logo links to the index page --> 
+
+                    <a href="/index.html" class="text-xl font-bold text-gray-800 tracking-wide"> 
+
+                        <img src="/assets/images/TIPLOGOFIN.png" alt="The Integrity Protocol Logo" class="h-8 w-auto"> 
+
+                    </a> 
+
+                </div> 
+
+                <nav class="flex space-x-6 md:space-x-8"> 
+
+                    <!-- Links use a base style and an ID for dynamic active highlighting --> 
+
+                    <a id="nav-about-me" href="/about-me.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">About Me</a> 
+
+                    <a id="nav-repos" href="/repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a> 
+
+                    <a id="nav-strategy" href="/blog.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Strategy</a> 
+
+                </nav> 
+
+            </div> 
+
+        </div> 
+
+    </header> 
+    <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GRC Career Sprint, Take 2. The Adaptive Plan for Leadership</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #f4f6f9; }
-        
-        /* Custom styles for article content for better readability */
-        .article-content h2 { 
-            font-size: 1.875rem; /* text-3xl */
-            font-weight: 700; 
-            margin-top: 2.5rem; 
-            margin-bottom: 1rem; 
-            color: #1f2937; /* Gray-800 */
-        }
-        .article-content h3 { 
-            font-size: 1.5rem; /* text-2xl */
-            font-weight: 600; 
-            margin-top: 2rem; 
-            margin-bottom: 0.75rem; 
-            color: #374151; /* Gray-700 */
-            border-bottom: 2px solid #e5e7eb; /* Subtle line for separation */
-            padding-bottom: 0.25rem;
-        }
-        .article-content h4 { /* For Phase headings */
-            font-size: 1.25rem; /* text-xl */
-            font-weight: 700; 
-            margin-top: 1.5rem; 
-            margin-bottom: 0.5rem; 
-            color: #4f46e5; /* Indigo-600 accent */
-        }
-        .article-content p, .article-content li { 
-            line-height: 1.75; 
-            margin-bottom: 1rem; 
-            color: #4b5563; /* Gray-600 */
-        }
-        .article-content strong { 
-            font-weight: 600; 
-            color: #111827; /* Gray-900 */
-        }
-        .article-content ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .article-content ul li {
-            margin-bottom: 0.5rem;
-        }
-        .article-content hr {
-            margin: 3rem 0;
-            border: 0;
-            border-top: 1px solid #d1d5db; /* Gray-300 */
-        }
-    </style>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<style type='text/css'  id="style-theme_css">:root {
+    /* Clean light colour palette - optimised for readability */
+    --bg-primary: #fafafa;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f5f5f5;
+    --bg-code: #f8f8f8;
+
+    /* Text colours with optimal contrast */
+    --text-primary: #2c3e50;
+    --text-secondary: #546e7a;
+    --text-muted: #90a4ae;
+    --text-code: #37474f;
+
+    /* Accent colours - subtle and calming */
+    --accent-blue: #5e9ed6;
+    --accent-teal: #26a69a;
+    --accent-purple: #7e57c2;
+    --accent-orange: #ff8a65;
+    --accent-green: #66bb6a;
+    --accent-red: #ef5350;
+
+    /* Borders and dividers */
+    --border-light: #e0e0e0;
+    --border-medium: #bdbdbd;
+    --border-dark: #9e9e9e;
+
+    /* Shadows */
+    --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+    /* Required Typora variables */
+    --bg-color: var(--bg-primary);
+    --text-color: var(--text-primary);
+    --md-char-color: var(--text-muted);
+    --meta-content-color: var(--accent-teal);
+    --primary-color: var(--accent-blue);
+    --primary-btn-border-color: var(--accent-blue);
+    --primary-btn-text-color: var(--bg-secondary);
+    --window-border: 1px solid var(--border-light);
+    --active-file-bg-color: var(--bg-tertiary);
+    --active-file-text-color: var(--accent-blue);
+    --active-file-border-color: var(--accent-blue);
+    --side-bar-bg-color: var(--bg-secondary);
+    --item-hover-bg-color: var(--bg-tertiary);
+    --item-hover-text-color: var(--accent-blue);
+    --control-text-color: var(--text-secondary);
+    --control-text-hover-color: var(--accent-blue);
+    --search-select-bg-color: #b3e5fc;
+    --rawblock-edit-panel-bd: var(--border-medium);
+    --monospace: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+    --select-text-bg-color: #b3e5fc;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#write {
+    max-width: 960px;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 1400px) {
+    #write {
+        max-width: 1100px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #write {
+        max-width: 1200px;
+    }
+}
+
+/* Headings - clean hierarchy */
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 2.5rem 0 1rem 0;
+    padding: 0;
+    color: var(--text-primary);
+}
+
+#write h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+#write h2 {
+    font-size: 1.8rem;
+    color: var(--accent-blue);
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 0.3rem;
+}
+
+#write h3 {
+    font-size: 1.5rem;
+    color: var(--accent-teal);
+}
+
+#write h4 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+}
+
+#write h5 {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+}
+
+#write h6 {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Paragraph text */
+#write p {
+    margin: 1.2rem 0;
+    line-height: 1.8;
+}
+
+/* Links - subtle but clear */
+#write a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+#write a:hover {
+    color: var(--accent-teal);
+    border-bottom-color: var(--accent-teal);
+}
+
+/* Bold and emphasis */
+#write strong,
+#write b {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+#write em,
+#write i {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Lists - clean spacing */
+#write ul,
+#write ol {
+    padding-left: 2rem;
+    margin: 1.2rem 0;
+}
+
+#write ul li,
+#write ol li {
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+#write ul li::marker {
+    color: var(--accent-blue);
+}
+
+#write ol li::marker {
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+/* Nested lists */
+#write ul ul,
+#write ol ol,
+#write ul ol,
+#write ol ul {
+    margin: 0.3rem 0;
+}
+
+/* Code blocks - soft background */
+#write pre.md-fences,
+#write code {
+    background: var(--bg-code);
+    border: 1px solid var(--border-light);
+    color: var(--text-code);
+    font-family: var(--monospace);
+    font-size: 0.9em;
+    border-radius: 4px;
+}
+
+#write pre.md-fences {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    overflow-x: auto;
+    box-shadow: var(--shadow-subtle);
+}
+
+#write code {
+    padding: 0.2em 0.5em;
+    font-size: 0.88em;
+}
+
+.CodeMirror {
+    background: var(--bg-code);
+    color: var(--text-code);
+    font-family: var(--monospace);
+    line-height: 1.6;
+}
+
+.CodeMirror-gutters {
+    background: var(--bg-tertiary);
+    border-right: 1px solid var(--border-light);
+}
+
+.CodeMirror-linenumber {
+    color: var(--text-muted);
+}
+
+.CodeMirror-activeline-background {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* Inline code */
+#write p code,
+#write li code {
+    background: var(--bg-code);
+    border: 1px solid var(--border-light);
+    color: var(--text-code);
+}
+
+/* Blockquotes - clean and minimal */
+#write blockquote {
+    border-left: 4px solid var(--accent-blue);
+    background: var(--bg-tertiary);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    color: var(--text-secondary);
+    border-radius: 0 4px 4px 0;
+}
+
+#write blockquote p {
+    margin: 0.5rem 0;
+}
+
+#write blockquote p:first-child {
+    margin-top: 0;
+}
+
+#write blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Horizontal rule */
+#write hr {
+    border: none;
+    height: 1px;
+    background: var(--border-light);
+    margin: 3rem 0;
+}
+
+/* Tables - clean grid */
+#write table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem 0;
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-subtle);
+}
+
+#write th,
+#write td {
+    border: 1px solid var(--border-light);
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+#write th {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+#write tr:nth-child(even) {
+    background: var(--bg-tertiary);
+}
+
+#write tr:hover {
+    background: rgba(94, 158, 214, 0.05);
+}
+
+/* Selection */
+::selection,
+*::selection {
+    background: var(--search-select-bg-color);
+    color: var(--text-primary);
+}
+
+::-moz-selection {
+    background: var(--search-select-bg-color);
+    color: var(--text-primary);
+}
+
+/* Task lists */
+.task-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.md-task-list-item {
+    padding-left: 1.5rem;
+}
+
+.md-task-list-item > input {
+    -webkit-appearance: none;
+    top: auto;
+    margin-right: 0.5rem;
+    margin-left: -1.5rem;
+}
+
+.md-task-list-item > input:before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid var(--border-medium);
+    background: var(--bg-secondary);
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.md-task-list-item > input:checked:before {
+    content: '✓';
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: var(--bg-secondary);
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Sidebar */
+#typora-sidebar {
+    background: var(--bg-secondary);
+    border-right: 1px solid var(--border-light);
+}
+
+.file-list-item {
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-light);
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
+
+.file-list-item.active,
+.file-list-item:hover {
+    background: var(--bg-tertiary);
+    color: var(--accent-blue);
+    border-left: 3px solid var(--accent-blue);
+}
+
+.file-node-content {
+    color: var(--text-primary);
+}
+
+.file-library-node.active > .file-node-content,
+.file-list-item.active {
+    color: var(--accent-blue);
+}
+
+.file-library-node.active > .file-node-background {
+    background: var(--bg-tertiary);
+}
+
+/* Sidebar tabs */
+.sidebar-tabs {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.ty-side-sort-btn.active,
+.ty-side-sort-btn:hover {
+    color: var(--accent-blue);
+}
+
+/* Footer */
+footer {
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-light);
+    background: var(--bg-secondary);
+}
+
+#footer-word-count {
+    color: var(--text-muted);
+}
+
+/* Tooltips */
+#ty-tooltip {
+    background: var(--text-primary);
+    border: 1px solid var(--border-medium);
+    color: var(--bg-secondary);
+    border-radius: 4px;
+    box-shadow: var(--shadow-medium);
+}
+
+/* Modal dialogues */
+.modal-content {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+    color: var(--text-primary);
+    border-radius: 8px;
+    box-shadow: var(--shadow-medium);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-light);
+    background: var(--bg-tertiary);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-light);
+    background: var(--bg-tertiary);
+}
+
+.modal-content input {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-medium);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.modal-content input:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(94, 158, 214, 0.1);
+}
+
+/* Buttons */
+.btn,
+.btn-default {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-medium);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn:hover,
+.btn-default:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.btn-primary {
+    background: var(--accent-blue);
+    color: var(--bg-secondary);
+    border: 1px solid var(--accent-blue);
+}
+
+.btn-primary:hover {
+    background: var(--accent-teal);
+    border-color: var(--accent-teal);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-medium);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border-dark);
+}
+
+/* Search */
+.md-search-hit {
+    background: #fff59d;
+    color: var(--text-primary);
+    border-radius: 2px;
+}
+
+#md-searchpanel {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-light);
+}
+
+#md-searchpanel input {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-medium);
+    color: var(--text-primary);
+    border-radius: 4px;
+}
+
+#md-searchpanel input:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+}
+
+/* Cursor */
+.CodeMirror-cursor {
+    border-left: 2px solid var(--accent-blue);
+}
+
+/* Focus mode */
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: var(--text-muted) !important;
+    opacity: 0.5;
+}
+
+.on-focus-mode .md-focus,
+.on-focus-mode .md-focus-container {
+    color: var(--text-primary);
+}
+
+/* Source mode syntax */
+.cm-s-inner .cm-header,
+.cm-header {
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+.cm-s-inner .cm-link,
+.cm-link {
+    color: var(--accent-teal);
+}
+
+.cm-s-inner .cm-string,
+.cm-string {
+    color: var(--accent-green);
+}
+
+.cm-s-inner .cm-comment,
+.cm-comment {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.cm-s-inner .cm-keyword,
+.cm-keyword {
+    color: var(--accent-purple);
+    font-weight: 600;
+}
+
+.cm-s-inner .cm-variable,
+.cm-variable {
+    color: var(--text-primary);
+}
+
+.cm-s-inner .cm-tag,
+.cm-tag {
+    color: var(--accent-blue);
+}
+
+.cm-s-inner .cm-attribute,
+.cm-attribute {
+    color: var(--accent-teal);
+}
+
+.cm-s-inner .cm-number,
+.cm-number {
+    color: var(--accent-orange);
+}
+
+.cm-s-inner .cm-operator,
+.cm-operator {
+    color: var(--text-secondary);
+}
+
+.cm-s-inner .cm-def,
+.cm-def {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.cm-s-inner .cm-property,
+.cm-property {
+    color: var(--accent-teal);
+}
+
+.cm-s-inner .cm-builtin,
+.cm-builtin {
+    color: var(--accent-purple);
+}
+
+/* Mermaid diagrams */
+.md-diagram-panel {
+    border: 1px solid var(--border-light);
+    background: var(--bg-secondary);
+    border-radius: 4px;
+}
+
+/* Meta info */
+.md-image > .md-meta {
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-light);
+}
+
+/* Mark/highlight */
+mark {
+    background: #fff59d;
+    color: var(--text-primary);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* Window controls */
+.typora-node {
+    background: var(--bg-primary);
+}
+
+/* Preferences */
+.ty-preferences {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.ty-preferences .window-header {
+    background: var(--bg-tertiary);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.ty-preferences select {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-medium);
+    color: var(--text-primary);
+    border-radius: 4px;
+}
+
+/* Context menu */
+.context-menu,
+.dropdown-menu {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    box-shadow: var(--shadow-medium);
+}
+
+.context-menu .menu-item,
+.dropdown-menu > li > a {
+    color: var(--text-primary);
+}
+
+.context-menu .menu-item:hover,
+.dropdown-menu > li > a:hover {
+    background: var(--bg-tertiary);
+    color: var(--accent-blue);
+}
+
+/* Megamenu */
+.megamenu-content {
+    background: var(--bg-secondary);
+}
+
+.megamenu-menu-panel {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+/* Outline panel */
+.outline-content {
+    line-height: 1.6;
+}
+
+.outline-item:hover {
+    background: var(--bg-tertiary);
+    color: var(--accent-blue);
+}
+
+/* Print styles */
+@media print {
+    #write {
+        max-width: 100%;
+    }
+
+    body {
+        background: white;
+    }
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title></title>
 </head>
-<body class="antialiased">
-<header class="bg-white shadow-lg sticky top-0 z-10 **h-16**">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- 
-            The inner div already uses h-16, but adding h-16 to the header 
-            ensures the space is reserved before the content loads, 
-            eliminating the scroll or creep.
-        -->
-        <div class="flex justify-between items-center h-16">
-            <div class="flex-shrink-0">
-                <!-- 
-                    PATH CORRECTION: Reverting to ABSOLUTE paths (starting with /) 
-                    for standard deployment setups (like GitHub Pages root). 
-                    If this is a local file structure test, this may need to be reverted to '../'.
-                -->
-                <a href="/index.html" class="text-xl font-bold text-gray-800 tracking-wide">
-                    <img src="/assets/images/TIPLOGOFIN.png" alt="The Integrity Protocol Logo" class="h-8 w-auto" 
-                         onerror="this.onerror=null; this.src='https://placehold.co/320x80/4338ca/ffffff?text=Integrity+Protocol+Logo';">
-                </a>
-            </div>
-            <nav class="flex space-x-6 md:space-x-8">
-                <!-- Links now use standard absolute paths for consistency -->
-                <a id="nav-about-me" href="/about-me.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">About Me</a>
-                <a id="nav-repos" href="/repos.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Code Portfolio</a>
-                <a id="nav-strategy" href="/blog.html" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out">Strategy</a>
-            </nav>
-        </div>
-    </div>
-</header>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='my-grc-career-sprint-take-2-the-adaptive-plan-for-leadership'><span>My GRC Career Sprint, Take 2. The Adaptive Plan for Leadership</span></h1><p><span>Following last week&#39;s update, I&#39;m excited to share a deeper dive into the &#39;how&#39; of my pivot into Governance, Risk, and Compliance (GRC) leadership. This isn&#39;t a sudden career change; it&#39;s a strategic evolution. My years in financial services, mastering </span><strong><span>AML/KYC compliance</span></strong><span>, </span><strong><span>process optimisation</span></strong><span>, and </span><strong><span>large-scale team leadership</span></strong><span>, have given me a robust foundation in the &#39;G&#39; and &#39;R&#39; of GRC. Now, I&#39;m focused on acquiring the rigorous technical understanding required for modern </span><strong><span>cyber-centric risk</span></strong><span>.</span></p><p><img src="https://integrityprotocol.com.au/assets/images/digital-landscape.jpg" alt="Conceptual image of a digital landscape path leading to a skill tree"></p><p><span>As someone with </span><strong><span>ADHD</span></strong><span>, I know a rigid plan is often a recipe for burnout. My approach is designed to be </span><strong><span>constructively adaptable</span></strong><span>, ensuring curiosity fuels my momentum without derailing my ultimate objective. This isn&#39;t a static six-month syllabus; it&#39;s an adaptive, three-phase sprint.</span></p><h2 id='the-adaptive-three-phase-grc-sprint'><span>The Adaptive Three-Phase GRC Sprint</span></h2><p><span>The core of this &quot;Take 2&quot; sprint is about stacking the </span><em><span>technical</span></em><span> skills (the &#39;C&#39; for Controls and the </span><em><span>Cyber</span></em><span> in Risk) onto my existing </span><em><span>Governance and Compliance</span></em><span> expertise. Each phase builds on the last, ensuring theory is immediately tested with application.</span></p><h4 id='phase-1-foundational-technical-mastery-the-core'><span>Phase 1: Foundational Technical Mastery (The Core)</span></h4><p><span>This phase is non-negotiable. I need to move from knowing </span><em><span>what</span></em><span> security controls are to knowing </span><em><span>how</span></em><span> they are implemented and measured in a modern context, particularly in the cloud.</span></p><ul><li><p><strong><span>Core Focus</span></strong><span>: </span><strong><span>Cloud Security Fundamentals</span></strong><span> (AWS/Azure security controls, IaaS/PaaS risk models), </span><strong><span>Network Architecture</span></strong><span> (understanding the concepts behind </span><strong><span>Zero Trust</span></strong><span>), and </span><strong><span>Cybersecurity Frameworks</span></strong><span> (NIST, ISO 27001).</span></p></li><li><p><strong><span>Success Metric</span></strong><span>: A complete, practical understanding of the </span><strong><span>CIA Triad</span></strong><span> (Confidentiality, Integrity, Availability) and how it informs cloud control design.</span></p></li></ul><h4 id='phase-2-application-and-automation-the-r-and-c'><span>Phase 2: Application and Automation (The &#39;R&#39; and &#39;C&#39;)</span></h4><p><span>This stage leverages my background in process optimisation (Power Automate, VBA) and transforms it into GRC automation. Governance shouldn&#39;t be manual paper-shuffling; it should be automated, auditable, and repeatable.</span></p><ul><li><p><strong><span>Core Focus</span></strong><span>: </span><strong><span>GRC Platforms</span></strong><span> (e.g., ServiceNow GRC, AuditBoard), </span><strong><span>Audit Logging and Monitoring</span></strong><span> to detect control failure, and the principles of </span><strong><span>Compliance as Code (CaC)</span></strong><span>.</span></p></li><li><p><strong><span>Success Metric</span></strong><span>: Translating </span><strong><span>control failure data</span></strong><span> into </span><strong><span>actionable risk insights</span></strong><span> for senior leadership using data analysis tools (PivotTables, VLOOKUPs) to find true risk signal in the noise.</span></p></li></ul><h4 id='phase-3-leadership-and-ethical-integration-the-g-and-the-protocol'><span>Phase 3: Leadership and Ethical Integration (The &#39;G&#39; and The Protocol)</span></h4><p><span>The ultimate goal is GRC leadership, which requires translating technical risk into business language and applying my </span><strong><span>Integrity Protocol Framework</span></strong><span> to emerging technological frontiers.</span></p><ul><li><p><strong><span>Core Focus</span></strong><span>: </span><strong><span>AI Governance</span></strong><span> (bias, transparency, explainability), </span><strong><span>Data Ethics</span></strong><span>, and </span><strong><span>Strategic Stakeholder Negotiation</span></strong><span> (managing the tension between security/risk and business enablement).</span></p></li><li><p><strong><span>Success Metric</span></strong><span>: A refined theory of the </span><strong><span>Integrity Protocol</span></strong><span> that explicitly links ethical principles (Hold Only What You Must, Secure What You Hold) to technical mechanisms like Zero Trust.</span></p></li></ul><h2 id='why-the-adaptive-approach-matters'><span>Why the Adaptive Approach Matters</span></h2><p><span>The biggest lesson from my previous attempt was that the world of GRC moves too fast for a static, linear syllabus. By using an adaptive model, I can:</span></p><ul><li><p><strong><span>Timebox Learning</span></strong><span>: Spend focused periods on one technical area, then immediately test that knowledge against a </span><strong><span>real-world case study</span></strong><span> (like a major Australian data breach).</span></p></li><li><p><strong><span>Maintain Momentum</span></strong><span>: Structure the sprint to accommodate the necessary shift in focus when a high-impact topic (like a new piece of legislation) suddenly demands attention.</span></p></li><li><p><strong><span>Ensure Accountability</span></strong><span>: Use this platform to document the process, turning my learning journey into a </span><strong><span>governance audit trail</span></strong><span> for myself.</span></p></li></ul><p><span>The pivot is challenging, but the path to leadership is clearer than ever. I&#39;m ready to move past the planning and start sharing the technical insights I&#39;m gaining.</span></p></div></div>
+   <footer class="bg-gray-800 text-white mt-10"> 
 
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center"> 
 
-    <!-- Main Article Content -->
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <article class="bg-white rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12">
-            <div class="text-center mb-8">
-                <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">GRC Strategy & Personal Development</span>
-                <h1 class="text-4xl font-extrabold text-gray-900 leading-tight">My GRC Career Sprint, Take 2. The Adaptive Plan for Leadership</h1>
-                <!-- Updated date to match the post content -->
-                <p class="text-md text-gray-500 mt-2">Published: Oct 5, 2025 by The Integrity Protocol</p>
-            </div>
+            <!-- 3. Copyright update: Changed name to 'The Integrity Protocol' --> 
 
-            <div class="article-content border-t pt-8">
-                
-                <p>Hi, all. Following last week's update, I'm excited to share a deeper dive into the 'how' of my pivot into Governance, Risk, and Compliance (GRC) leadership. This isn't a sudden career change; it's a strategic evolution. My years in financial services, mastering <strong>AML/KYC compliance</strong>, <strong>process optimisation</strong>, and <strong>large-scale team leadership</strong>, have given me a robust foundation in the 'G' and 'R' of GRC. Now, I'm focused on acquiring the rigorous technical understanding required for modern <strong>cyber-centric risk</strong>.</p>
-                
-                <!-- Image Placeholder for private-assets/digital-landscape.jpg -->
-                <div class="my-8 rounded-xl overflow-hidden shadow-lg">
-                    <img src="/assets/images/digital-landscape.jpg"
-                         alt="Conceptual image of a digital landscape path leading to a skill tree" 
-                         class="w-full h-auto object-cover">
-                </div>
-                <!-- Original file path: private-assets/digital-landscape.jpg -->
+            <p>&copy; 2025 The Integrity Protocol. All rights reserved.</p> 
 
-                <p>As someone with <strong>ADHD</strong>, I know a rigid plan is often a recipe for burnout. My approach is designed to be <strong>constructively adaptable</strong>, ensuring curiosity fuels my momentum without derailing my ultimate objective. This isn't a static six-month syllabus; it's an adaptive, three-phase sprint.</p>
+        </div> 
 
-                <hr>
+    </footer> 
 
-                <h2>The Adaptive Three-Phase GRC Sprint</h2>
+     
 
-                <p>The core of this "Take 2" sprint is about stacking the *technical* skills (the 'C' for Controls and the *Cyber* in Risk) onto my existing *Governance and Compliance* expertise. Each phase builds on the last, ensuring theory is immediately tested with application.</p>
+    <script> 
 
-                <h4>Phase 1: Foundational Technical Mastery (The Core)</h4>
-                <p>This phase is non-negotiable. I need to move from knowing *what* security controls are to knowing *how* they are implemented and measured in a modern context, particularly in the cloud.</p>
-                <ul>
-                    <li><strong>Core Focus</strong>: <strong>Cloud Security Fundamentals</strong> (AWS/Azure security controls, IaaS/PaaS risk models), <strong>Network Architecture</strong> (understanding the concepts behind <strong>Zero Trust</strong>), and <strong>Cybersecurity Frameworks</strong> (NIST, ISO 27001).</li>
-                    <li><strong>Success Metric</strong>: A complete, practical understanding of the <strong>CIA Triad</strong> (Confidentiality, Integrity, Availability) and how it informs cloud control design.</li>
-                </ul>
+        function setActiveLink() { 
 
-                <h4>Phase 2: Application and Automation (The 'R' and 'C')</h4>
-                <p>This stage leverages my background in process optimisation (Power Automate, VBA) and transforms it into GRC automation. Governance shouldn't be manual paper-shuffling; it should be automated, auditable, and repeatable.</p>
-                <ul>
-                    <li><strong>Core Focus</strong>: <strong>GRC Platforms</strong> (e.g., ServiceNow GRC, AuditBoard), <strong>Audit Logging and Monitoring</strong> to detect control failure, and the principles of <strong>Compliance as Code (CaC)</strong>.</li>
-                    <li><strong>Success Metric</strong>: Translating <strong>control failure data</strong> into <strong>actionable risk insights</strong> for senior leadership using data analysis tools (PivotTables, VLOOKUPs) to find true risk signal in the noise.</li>
-                </ul>
+            const path = window.location.pathname; 
 
-                <h4>Phase 3: Leadership and Ethical Integration (The 'G' and The Protocol)</h4>
-                <p>The ultimate goal is GRC leadership, which requires translating technical risk into business language and applying my <strong>Integrity Protocol Framework</strong> to emerging technological frontiers.</p>
-                <ul>
-                    <li><strong>Core Focus</strong>: <strong>AI Governance</strong> (bias, transparency, explainability), <strong>Data Ethics</strong>, and <strong>Strategic Stakeholder Negotiation</strong> (managing the tension between security/risk and business enablement).</li>
-                    <li><strong>Success Metric</strong>: A refined theory of the <strong>Integrity Protocol</strong> that explicitly links ethical principles (Hold Only What You Must, Secure What You Hold) to technical mechanisms like Zero Trust.</li>
-                </ul>
+            let activeLink; 
 
-                <hr>
+ 
 
-                <h2>Why the Adaptive Approach Matters</h2>
-                <p>The biggest lesson from my previous attempt was that the world of GRC moves too fast for a static, linear syllabus. By using an adaptive model, I can:</p>
-                <ul>
-                    <li><strong>Timebox Learning</strong>: Spend focused periods on one technical area, then immediately test that knowledge against a <strong>real-world case study</strong> (like a major Australian data breach).</li>
-                    <li><strong>Maintain Momentum</strong>: Structure the sprint to accommodate the necessary shift in focus when a high-impact topic (like a new piece of legislation) suddenly demands attention.</li>
-                    <li><strong>Ensure Accountability</strong>: Use this platform to document the process, turning my learning journey into a <strong>governance audit trail</strong> for myself.</li>
-                </ul>
+            // Define which page path matches which nav ID 
 
-                <p>The pivot is challenging, but the path to leadership is clearer than ever. I'm ready to move past the planning and start sharing the technical insights I'm gaining.</p>
+            if (path.includes('/repos.html')) { 
 
-                <a href="/blog.html" class="inline-flex items-center mt-6 text-indigo-600 hover:text-indigo-800 font-medium">
-                    <i class="fas fa-arrow-left mr-2"></i> Back to All Posts
-                </a>
-            </div>
-        </article>
-    </main>
+                activeLink = 'nav-repos'; 
 
-    <!-- Footer -->
-     <!-- Changes in the Footer (Copyright) -->
-    <footer class="bg-gray-800 text-white mt-10">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
-            <!-- Changed from <p>&copy; 2025 Sandie Nand. All rights reserved.</p> -->
-            <p>&copy; 2025 The Integrity Protocol. All rights reserved.</p>
-        </div>
-    </footer>
-    <script>
-        function setActiveLink() {
-            const path = window.location.pathname;
-            let activeLink;
+            } else if (path.includes('/blog.html')) { 
 
-            // Define which page path matches which nav ID
-            if (path.includes('/repos.html')) {
-                activeLink = 'nav-repos';
-            } else if (path.includes('/blog.html')) {
-                activeLink = 'nav-strategy';
-            } else if (path.includes('/about-me.html') || path === '/' || path.includes('/index.html')) {
-                // Treats index.html or the root path (/) as the 'About Me' page
-                activeLink = 'nav-about-me';
-            }
+                activeLink = 'nav-strategy'; 
 
-            if (activeLink) {
-                const element = document.getElementById(activeLink);
-                if (element) {
-                    // Remove the default, inactive classes
-                    element.classList.remove('text-gray-600', 'hover:text-indigo-600');
-                    
-                    // Add the active, highlighted classes
-                    element.classList.add('text-indigo-600', 'font-semibold', 'border-b-2', 'border-indigo-600');
-                }
-            }
-        }
-        
-        // Run the function when the page loads
-        setActiveLink();
-    </script>
+            } else if (path.includes('/about-me.html') || path === '/' || path.includes('/index.html')) { 
 
+                // Treats index.html or the root path (/) as the 'About Me' page 
 
-</body>
-</html>
+                activeLink = 'nav-about-me'; 
+
+            } 
+
+ 
+
+            if (activeLink) { 
+
+                const element = document.getElementById(activeLink); 
+
+                if (element) { 
+
+                    // Remove the default, inactive classes 
+
+                    element.classList.remove('text-gray-600', 'hover:text-indigo-600'); 
+
+                     
+
+                    // Add the active, highlighted classes 
+
+                    element.classList.add('text-indigo-600', 'font-semibold', 'border-b-2', 'border-indigo-600'); 
+
+                } 
+
+            } 
+
+        } 
+
+         
+
+        // Run the function when the page loads 
+
+        setActiveLink(); 
+
+    </script> 
+
+ 
+
+ 
+
+</body> 
+
+</html> 
