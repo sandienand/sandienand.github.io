@@ -22,7 +22,7 @@ To maintain intellectual honesty, I’ve had to pull apart the logic of my first
 
 - **The Audit Trail Myth:** I mentioned "immutable audit trails," but in high-volume IT, this creates a data haystack. If the logs are too noisy, the signal is lost. I am now refining how we define "significant actions" to ensure we aren't just hoarding logs just in case, but are instead capturing actionable intelligence. 
 
-![](C:\Users\User\Downloads\Gemini_Generated_Image_909m92909m92909m.png)
+![](/assets/images/Gemini_Generated_Image_909m92909m92909m.png)
 
 ## **The IP Framework (Version 2.0)** 
 
