@@ -23,47 +23,35 @@ body {
     background-color: var(--bg-body); 
 }
 
+
 .article-content h2 { 
     font-size: 1.875rem; 
     font-weight: 700; 
-    margin-top: 2.5rem; 
-    margin-bottom: 1rem; 
+    margin-top: 1rem;    /* Reduced from 2.5rem */
+    margin-bottom: 0.5rem; /* Reduced from 1rem */
     color: var(--text-heading); 
 }
 
 .article-content h3 { 
     font-size: 1.5rem; 
     font-weight: 600; 
-    margin-top: 2rem; 
-    margin-bottom: 0.75rem; 
-    color: #374151; 
-    border-bottom: 2px solid var(--border-subtle); 
-    padding-bottom: 0.25rem;
-}
-
-.article-content h4 { 
-    font-size: 1.25rem; 
-    font-weight: 700; 
-    margin-top: 1.5rem; 
+    margin-top: 1rem;    /* Reduced from 2rem */
     margin-bottom: 0.5rem; 
-    color: var(--brand-primary); 
+    color: var(--text-heading); 
+    border-bottom: 2px solid var(--border-subtle); 
+    padding-bottom: 0.1rem;
 }
 
 .article-content p, .article-content li { 
-    line-height: 1.75; 
-    margin-bottom: 1rem; 
+    line-height: 1.6;    /* Slightly tighter line spacing */
+    margin-bottom: 0.75rem; /* Reduced from 1rem */
     color: var(--text-main); 
 }
 
-.article-content strong { 
-    font-weight: 600; 
-    color: var(--text-bold); 
-}
-
 .article-content hr {
-    margin: 3rem 0;
+    margin: 1.5rem 0;    /* Reduced from 3rem */
     border: 0;
-    border-top: 1px solid #d1d5db; 
+    border-top: 1px solid var(--border-subtle); 
 }
 
 /* Custom Callout Box using variables */
