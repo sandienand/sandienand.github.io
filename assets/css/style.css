@@ -1,32 +1,83 @@
 :root {
+    /* Brand Foundation */
     --brand-primary: #4f46e5;
-    --brand-primary-hover: #3730a3;
-    --brand-accent-bg: #fff7ed;
-    --brand-accent-border: #f97316;
     --text-main: #4b5563;
     --text-heading: #1f2937;
-    --text-bold: #111827;
-    --bg-body: #f4f6f9;
+    --bg-body: #f4f6f9; /* Light Grey */
+    --bg-content: #ffffff; /* Pure White for the article */
     --border-subtle: #e5e7eb;
+
+    /* Integrity Protocol Accents (Ported from Typora) */
+    --accent-blue: #5e9ed6;   
+    --accent-teal: #26a69a;   
+    --bg-code: #f8f8f8;
 }
 
-body { font-family: 'Inter', sans-serif; background-color: var(--bg-body); }
+/* GLOBAL STYLES */
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: var(--bg-body); 
+    color: var(--text-main);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
 
-.article-content h1 { font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text-bold); }
+/* ARTICLE CONTAINER */
+.article-content {
+    background-color: var(--bg-content);
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
 
-/* Reduced margin-top from 2.5rem to 1rem */
-.article-content h2 { font-size: 1.5rem; font-weight: 700; margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--text-heading); }
+/* TYPOGRAPHY REFINEMENT */
+.article-content h1 { 
+    font-size: 2.25rem; 
+    font-weight: 800; 
+    border-bottom: 2px solid var(--border-subtle); 
+    padding-bottom: 0.5rem;
+    color: var(--text-heading); 
+    margin-top: 0;
+}
 
-/* Tightened paragraph spacing from 1rem to 0.75rem */
-.article-content p, .article-content li { line-height: 1.6; margin-bottom: 0.75rem; color: var(--text-main); }
+.article-content h2 { 
+    font-size: 1.8rem; 
+    color: var(--accent-blue); 
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+}
 
-/* Minimalist horizontal rule */
-.article-content hr { margin: 1.5rem 0; border: 0; border-top: 1px solid var(--border-subtle); }
+.article-content h3 { 
+    font-size: 1.5rem; 
+    color: var(--accent-teal); 
+    margin-top: 1.5rem;
+}
 
-.callout-box {
+/* ELEMENTS */
+.article-content blockquote {
+    border-left: 4px solid var(--accent-blue);
+    background-color: #f9fafb; 
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.article-content pre {
+    background-color: var(--bg-code);
     padding: 1rem;
-    background-color: var(--brand-accent-bg);
-    border-left: 4px solid var(--brand-accent-border);
-    border-radius: 0 0.75rem 0.75rem 0;
-    margin-bottom: 1rem;
+    overflow-x: auto;
+    border-radius: 6px;
+    border: 1px solid var(--border-subtle);
+}
+
+.article-content code {
+    background-color: var(--bg-code);
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9em;
+    border-radius: 4px;
 }
