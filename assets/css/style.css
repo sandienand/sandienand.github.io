@@ -12,6 +12,7 @@
     --bg-code: #f8f8f8;
 }
 
+/* GLOBAL STYLES */
 body { 
     font-family: 'Inter', sans-serif; 
     background-color: var(--bg-body); 
@@ -19,7 +20,17 @@ body {
     line-height: 1.6;
 }
 
-/* The Paper Container for Blog Posts */
+/* HOMEPAGE SPECIFIC */
+.hero-bg {
+    background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, var(--bg-body) 100%);
+}
+
+.cta-button:focus {
+    outline: 3px solid rgba(79, 70, 229, 0.5);
+    outline-offset: 2px;
+}
+
+/* ARTICLE CONTAINER (The "Paper" look) */
 .article-content {
     background-color: var(--bg-content);
     max-width: 850px;
@@ -29,28 +40,13 @@ body {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-/* Typography for Vditor Content */
+/* TYPOGRAPHY FOR VDITOR CONTENT */
 .article-content h1 { font-size: 2.5rem; font-weight: 800; color: var(--text-heading); margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-subtle); padding-bottom: 0.5rem; }
-.article-content h2 { font-size: 1.8rem; font-weight: 700; color: var(--accent-blue); margin-top: 2rem; margin-bottom: 1rem; }
+.article-content h2 { font-size: 1.8rem; font-weight: 700; color: var(--accent-blue); margin-top: 2rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.3rem;}
 .article-content h3 { font-size: 1.4rem; font-weight: 600; color: var(--accent-teal); margin-top: 1.5rem; }
 .article-content p { margin-bottom: 1.25rem; }
 .article-content blockquote { border-left: 4px solid var(--accent-blue); background: #f9fafb; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; }
 
-
-/* --- HOMEPAGE SPECIFIC STYLES --- */
-
-/* Custom gradient for the hero section background */
-.hero-bg {
-    background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, var(--bg-body) 100%);
-}
-
-/* Custom focus state for accessibility and UI polish */
-.cta-button:focus {
-    outline: 3px solid rgba(79, 70, 229, 0.5); /* Brand Primary with 50% opacity */
-    outline-offset: 2px;
-}
-
-/* Ensure images in articles don't overflow the paper container */
 .article-content img {
     max-width: 100%;
     height: auto;
