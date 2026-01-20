@@ -35,3 +35,25 @@ body {
 .article-content h3 { font-size: 1.4rem; font-weight: 600; color: var(--accent-teal); margin-top: 1.5rem; }
 .article-content p { margin-bottom: 1.25rem; }
 .article-content blockquote { border-left: 4px solid var(--accent-blue); background: #f9fafb; padding: 1rem 1.5rem; margin: 1.5rem 0; font-style: italic; }
+
+
+/* --- HOMEPAGE SPECIFIC STYLES --- */
+
+/* Custom gradient for the hero section background */
+.hero-bg {
+    background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, var(--bg-body) 100%);
+}
+
+/* Custom focus state for accessibility and UI polish */
+.cta-button:focus {
+    outline: 3px solid rgba(79, 70, 229, 0.5); /* Brand Primary with 50% opacity */
+    outline-offset: 2px;
+}
+
+/* Ensure images in articles don't overflow the paper container */
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
