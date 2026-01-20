@@ -1,0 +1,3 @@
+"markdown-editor.customCss": "my custom css rules"
+
+// Eg: "markdown-editor.customCss": ".vditor-ir pre.vditor-reset {line-height: 32px;padding-right: calc(100% - 800px) !important; margin-left: 100px;    font-family: system-ui !important;}"
