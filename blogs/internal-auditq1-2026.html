@@ -1,114 +1,84 @@
 <style>
-    .grc-report table { 
+    /* Styling only the elements inside this post */
+    .ip-audit-report table { 
         width: 100%; 
         border-collapse: collapse; 
         margin: 20px 0; 
         border: 1px solid #ddd;
     }
-    .grc-report th { 
-        background-color: #f5f5f5; 
-        padding: 12px; 
+    .ip-audit-report th { 
+        background-color: #f9f9f9; 
+        padding: 10px; 
         border: 1px solid #ddd; 
         text-align: left; 
     }
-    .grc-report td { 
-        padding: 12px; 
+    .ip-audit-report td { 
+        padding: 10px; 
         border: 1px solid #ddd; 
-        vertical-align: top; 
     }
-    .grc-report .rating-critical { color: #d9534f; font-weight: bold; }
-    .grc-report .rating-marginal { color: #f0ad4e; font-weight: bold; }
-    .grc-report .rating-satisfactory { color: #5cb85c; font-weight: bold; }
-    .grc-report .risk-box { 
-        background-color: #fff5f5; 
-        border: 1px solid #ebccd1; 
-        padding: 20px; 
+    .ip-audit-report .status-red { color: #d00; font-weight: bold; }
+    .ip-audit-report .status-orange { color: #e67e22; font-weight: bold; }
+    .ip-audit-report .status-green { color: #27ae60; font-weight: bold; }
+    .ip-audit-report .disclosure-box { 
+        background-color: #fffafa; 
+        border: 2px solid #f5c6cb; 
+        padding: 15px; 
         margin-top: 30px; 
     }
 </style>
 
-<div class="grc-report">
+<div class="ip-audit-report">
     <h1>IP Protocol: Internal Audit Report (Q1 2026)</h1>
     
-    <p><strong>Reference:</strong> IP-PER-001<br>
-    <strong>Classification:</strong> Educational purposes<br>
-    <strong>Audit Scope:</strong> Personal Digital Ecosystem vs. Integrity Protocol v2.0</p>
+    <p><strong>Reference:</strong> IP-PER-001 | <strong>Audit Scope:</strong> Personal Digital Ecosystem vs. IP v2.0</p>
 
     <h3>Executive Summary</h3>
-    <p>Evaluated the operational effectiveness of the Integrity Protocol. While the conceptual framework is sound, testing revealed a significant latency with human-in-the-loop and a lack of automated enforcement for Principle 4. The ecosystem remains resilient but relies too heavily on manual intervention rather than systemic constraints.</p>
+    <p>Evaluated the operational effectiveness of the Integrity Protocol. Testing revealed significant latency with human-in-the-loop and a lack of automated enforcement for Principle 4. The ecosystem remains resilient but relies too heavily on manual intervention.</p>
 
     <h3>Scorecard</h3>
     <table>
         <thead>
-            <tr>
-                <th>Control Area</th>
-                <th>Principle</th>
-                <th>Rating</th>
-                <th>Risk Trend</th>
-            </tr>
+            <tr><th>Control Area</th><th>Principle</th><th>Rating</th><th>Risk Trend</th></tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Data Utility</td>
-                <td>1</td>
-                <td><span class="rating-satisfactory">Satisfactory</span></td>
-                <td>Decreasing</td>
-            </tr>
-            <tr>
-                <td>Containment</td>
-                <td>2</td>
-                <td><span class="rating-critical">Critical</span></td>
-                <td>Increasing</td>
-            </tr>
-            <tr>
-                <td>Accountability</td>
-                <td>3</td>
-                <td><span class="rating-marginal">Marginal</span></td>
-                <td>Stable</td>
-            </tr>
+            <tr><td>Data Utility</td><td>1</td><td><span class="status-green">Satisfactory</span></td><td>Decreasing</td></tr>
+            <tr><td>Containment</td><td>2</td><td><span class="status-red">Critical</span></td><td>Increasing</td></tr>
+            <tr><td>Accountability</td><td>3</td><td><span class="status-orange">Marginal</span></td><td>Stable</td></tr>
         </tbody>
     </table>
 
-    <h3>Detailed Findings &amp; Testing</h3>
+    <h3>Detailed Findings</h3>
+    <h5>Test Case 001: Data Minimisation</h5>
+    <p><strong>Observation:</strong> 26 location permissions (76%) were unused in >24 hours.<br>
+    <strong>Result:</strong> <span class="status-red">Non-Compliant</span></p>
 
-    <h5>Test Case 001: Data Minimisation (Principle 1)</h5>
-    <p><strong>Observation:</strong> 34 active permissions identified. 26 (76%) had not been utilised in &gt;24 hours, violating Justified Utility threshold.<br>
-    <strong>Result:</strong> <span class="rating-critical">Non-Compliant</span></p>
+    <h5>Test Case 002: Blast Radius</h5>
+    <p><strong>Observation:</strong> Handset acts as a "Golden Key" to the Password Manager.<br>
+    <strong>Result:</strong> <span class="status-red">Fail</span></p>
 
-    <h5>Test Case 002: Blast Radius &amp; Zero Trust (Principle 2)</h5>
-    <p><strong>Observation:</strong> The primary mobile device acts as a "Golden Key." Access to the device grants access to the MFA app, which in turn grants access to the Password Manager.<br>
-    <strong>Result:</strong> <span class="rating-critical">Fail</span></p>
-
-    <h5>Test Case 003: Contestability &amp; Human Circuit Breaker (Principle 3)</h5>
-    <p><strong>Observation:</strong> Automation bias detected. The third-party auditor accepted AI output without invoking the contestable pathway due to high linguistic confidence.<br>
-    <strong>Result:</strong> <span class="rating-marginal">Marginal</span></p>
+    <h5>Test Case 003: Contestability</h5>
+    <p><strong>Observation:</strong> Automation bias detected; auditor accepted AI output without challenge.<br>
+    <strong>Result:</strong> <span class="status-orange">Marginal</span></p>
 
     <hr>
-
-    <p>Applying the IP Protocol v2.0 to my daily life has exposed a structural flaw: I designed a protocol for a machine, but it’s being executed by a human.</p>
-    <p>In GRC terms, I discovered that <strong>Pathways are not Protections.</strong> I assumed that because a Contestability Pathway (Principle 3) existed, it would be used. My testing proved the opposite. When presented with high-confidence AI output, the human brain seeks the Path of Least Resistance. In Test Case 003, the Human Circuit Breaker didn't trip; it acted as a Human Rubber Stamp.</p>
+    <p>Applying v2.0 exposed a structural flaw: I designed a protocol for a machine, but it’s being executed by a human. In GRC terms, <strong>Pathways are not Protections</strong>.</p>
 
     <h3>The IP Trigger Registry</h3>
     <table>
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Event Category</th>
-                <th>Required IP Action</th>
-            </tr>
+            <tr><th>ID</th><th>Trigger</th><th>Required IP Action</th></tr>
         </thead>
         <tbody>
             <tr><td>TR-01</td><td>System Expansion</td><td>Document specific utility for new permissions.</td></tr>
-            <tr><td>TR-02</td><td>Identity Shift</td><td>Perform blast radius check on new MFA factors.</td></tr>
-            <tr><td>TR-03</td><td>High-Stakes AI</td><td>Document at least one critical assumption made by the AI.</td></tr>
-            <tr><td>TR-04</td><td>Anomaly/Drift</td><td>Trace Telemetry to identify perimeter logic failure.</td></tr>
-            <tr><td>TR-05</td><td>Third-Party Flux</td><td>Re-validate Liability vs. Benefit equation.</td></tr>
+            <tr><td>TR-02</td><td>Identity Shift</td><td>Perform blast radius check on new MFA.</td></tr>
+            <tr><td>TR-03</td><td>High-Stakes AI</td><td>Document one critical assumption made by AI.</td></tr>
+            <tr><td>TR-04</td><td>Anomaly/Drift</td><td>Trace Telemetry for perimeter logic failure.</td></tr>
+            <tr><td>TR-05</td><td>Third-Party Flux</td><td>Re-validate Liability vs. Benefit.</td></tr>
         </tbody>
     </table>
 
-    <div class="risk-box">
-        <p><strong>Formal Disclosure (IP-RAF-2026-001):</strong> As of this report, I am formally accepting a CRITICAL risk regarding Principle 2 (Containment). My primary handset remains a Single Point of Failure.</p>
-        <p><strong>Compensating Control:</strong> Manual weekly audits of login activity until hardware-based OOB authentication is implemented.</p>
-        <p><strong>Review Date:</strong> 30 Days from today.</p>
+    <div class="disclosure-box">
+        <p><strong>Formal Disclosure (IP-RAF-2026-001):</strong> Accepting CRITICAL risk regarding Principle 2 (Containment). Handset remains a Single Point of Failure.</p>
+        <p><strong>Compensating Control:</strong> Manual weekly audits until OOB authentication is implemented.</p>
     </div>
 </div>
