@@ -1,0 +1,15 @@
+title: The Integrity Protocol
+email: sandie@integrityprotocol.com.au
+description: >- 
+  GRC for the AI Era.
+baseurl: "" 
+url: "https://sandienand.github.io" 
+
+defaults:
+  - scope:
+      path: "blogs"
+    values:
+      layout: "post"
+
+exclude:
+  - .vditor
