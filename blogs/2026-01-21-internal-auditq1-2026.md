@@ -24,7 +24,8 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 
 ### **Detailed Findings & Testing**
 
-##### **Test Case 001:** Data Minimisation (Principle 1)<br>
+##### **Test Case 001:** Data Minimisation (Principle 1)
+<br>
 
 **Control Objective:** Minimise attack surface by purging non-essential data.
 
@@ -38,7 +39,8 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 
 **Remediation:** Immediate reduction and revocation of dormant permissions. Living Map updated to justify the remaining 8 location permissions.
 
-##### Test Case 002: Blast Radius & Zero Trust (Principle 2)<br>
+##### Test Case 002: Blast Radius & Zero Trust (Principle 2)
+<br>
 
 **Control Objective:** Prevent lateral movement following a perimeter breach.
 
@@ -52,7 +54,8 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 
 **Remediation:** Implement hardware-based security keys (OOB) to decouple identity from the primary device.
 
-##### Test Case 003: Contestability & Human Circuit Breaker (Principle 3)<br>
+##### Test Case 003: Contestability & Human Circuit Breaker (Principle 3)
+<br>
 
 **Control Objective:** Ensure AI decisions are challengeable and not blindly accepted.
 
@@ -67,9 +70,9 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 **Remediation:** Update the Protocol to require a mandatory alternate perspective log for all AI-assisted decisions over a specific risk threshold.
 
 ---
-<br>
----
 
+
+<br>
 Applying the IP Protocol v2.0 to my daily life has exposed a structural flaw: I designed a protocol for a machine, but it’s being executed by a human.
 
 In GRC terms, I discovered that **Pathways are not Protections.** I assumed that because a Contestability Pathway (Principle 3) existed, it would be used. My testing proved the opposite. When presented with high-confidence AI output, the human brain seeks the Path of Least Resistance. In Test Case 003, the Human Circuit Breaker didn't trip; it acted as a Human Rubber Stamp. We are linguistically seduced by AI, trading our critical faculty for speed.
@@ -82,7 +85,7 @@ To move toward **v2.1**, the protocol must shift from **offering** a choice to *
 
 ---
 
-#### The IP Trigger Registry
+### The IP Trigger Registry
 
 | Trigger ID | Event Category   | Definition of Trigger                                                              | Required IP Action                                                                                                   |
 | ------------ | ------------------ | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
