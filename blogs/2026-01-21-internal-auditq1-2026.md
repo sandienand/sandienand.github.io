@@ -24,8 +24,7 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 
 ### **Detailed Findings & Testing**
 
-##### **Test Case 001:** Data Minimisation (Principle 1)
-
+##### **Test Case 001: Data Minimisation (Principle 1) ** 
 
 **Control Objective:** Minimise attack surface by purging non-essential data.
 
@@ -39,8 +38,7 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 
 **Remediation:** Immediate reduction and revocation of dormant permissions. Living Map updated to justify the remaining 8 location permissions.
 
-##### Test Case 002: Blast Radius & Zero Trust (Principle 2)
-
+##### **Test Case 002: Blast Radius & Zero Trust (Principle 2)**
 
 **Control Objective:** Prevent lateral movement following a perimeter breach.
 
@@ -54,7 +52,7 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 
 **Remediation:** Implement hardware-based security keys (OOB) to decouple identity from the primary device.
 
-##### Test Case 003: Contestability & Human Circuit Breaker (Principle 3)
+##### **Test Case 003: Contestability & Human Circuit Breaker (Principle 3)**
 
 
 **Control Objective:** Ensure AI decisions are challengeable and not blindly accepted.
