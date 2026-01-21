@@ -91,6 +91,10 @@ To move toward **v2.1**, the protocol must shift from **offering** a choice to *
 | TR-04      | Anomaly/Drift    | A service sends an unexpected security alert or a New Login notification.          | **Principle 4 Review:**  Do not just clear the alert. I must trace the Telemetry to see if my perimeter logic failed. |
 | TR-05      | Third-Party Flux | A service I use updates its Privacy Policy or Terms of Service.                    | **Principle 1 Re-Validation:**  Does the Liability vs. Benefit equation still balance, or is it time to purge?        |
 
+
+
+![](assets/20260121_202220_ipq12026.png)
+
 <br>PS:
 
 **Formal Disclosure (IP-RAF-2026-001):** As of this report, I am formally accepting a CRITICAL risk regarding Principle 2 (Containment). My primary handset remains a Single Point of Failure for my identity ecosystem.
