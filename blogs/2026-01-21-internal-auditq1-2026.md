@@ -25,7 +25,7 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 ### **Detailed Findings & Testing**
 
 ##### **Test Case 001:** Data Minimisation (Principle 1)
-<br>
+
 
 **Control Objective:** Minimise attack surface by purging non-essential data.
 
@@ -40,7 +40,7 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 **Remediation:** Immediate reduction and revocation of dormant permissions. Living Map updated to justify the remaining 8 location permissions.
 
 ##### Test Case 002: Blast Radius & Zero Trust (Principle 2)
-<br>
+
 
 **Control Objective:** Prevent lateral movement following a perimeter breach.
 
@@ -55,7 +55,7 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 **Remediation:** Implement hardware-based security keys (OOB) to decouple identity from the primary device.
 
 ##### Test Case 003: Contestability & Human Circuit Breaker (Principle 3)
-<br>
+
 
 **Control Objective:** Ensure AI decisions are challengeable and not blindly accepted.
 
@@ -89,11 +89,11 @@ To move toward **v2.1**, the protocol must shift from **offering** a choice to *
 
 | Trigger ID | Event Category   | Definition of Trigger                                                              | Required IP Action                                                                                                   |
 | ------------ | ------------------ | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| TR-01      | System Expansion | Installing a new app/service that requests access to Contacts, Files, or Location. | **Principle 1 Audit:** Document the *specific* data utility. Why are the additional permissions required?            |
-| TR-02      | Identity Shift   | Changing a primary password or adding a new biometric/MFA factor.                  | **Principle 2 Test:** Perform a blast radius check. Does this change create a new single Point of Failure?           |
-| TR-03      | High-Stakes AI   | Using an LLM to generate a work product, legal text, or financial plan.            | **Principle 3 Invoke:** Identify and document at least one critical assumption made by the AI.                       |
-| TR-04      | Anomaly/Drift    | A service sends an unexpected security alert or a New Login notification.          | **Principle 4 Review:** Do not just clear the alert. I must trace the Telemetry to see if my perimeter logic failed. |
-| TR-05      | Third-Party Flux | A service I use updates its Privacy Policy or Terms of Service.                    | **Principle 1 Re-Validation:** Does the Liability vs. Benefit equation still balance, or is it time to purge?        |
+| TR-01      | System Expansion | Installing a new app/service that requests access to Contacts, Files, or Location. | **Principle 1 Audit:** <br> Document the *specific* data utility. Why are the additional permissions required?            |
+| TR-02      | Identity Shift   | Changing a primary password or adding a new biometric/MFA factor.                  | **Principle 2 Test:** <br> Perform a blast radius check. Does this change create a new single Point of Failure?           |
+| TR-03      | High-Stakes AI   | Using an LLM to generate a work product, legal text, or financial plan.            | **Principle 3 Invoke:** <br> Identify and document at least one critical assumption made by the AI.                       |
+| TR-04      | Anomaly/Drift    | A service sends an unexpected security alert or a New Login notification.          | **Principle 4 Review:** <br> Do not just clear the alert. I must trace the Telemetry to see if my perimeter logic failed. |
+| TR-05      | Third-Party Flux | A service I use updates its Privacy Policy or Terms of Service.                    | **Principle 1 Re-Validation:** <br> Does the Liability vs. Benefit equation still balance, or is it time to purge?        |
 
 <br>PS:
 
