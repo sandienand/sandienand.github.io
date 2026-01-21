@@ -25,86 +25,209 @@
             </div>
         </div>
     </header>
-
-    <main class="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8 bg-white shadow-sm my-8 rounded-lg">
-        
-        <header class="mb-10 border-b pb-6">
-            <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Logic Library</h1>
-            <p class="text-xl text-indigo-600 font-medium italic">The Integrity Paradox: Testing the Limits of the Human Circuit Breaker</p>
-            <div class="mt-4 text-sm text-gray-500">
-                <span>Reference: IP-PER-001</span> | <span>Classification: Educational</span>
-            </div>
-        </header>
-
-        <section class="prose prose-indigo max-w-none text-gray-700 leading-relaxed">
-            <h2 class="text-2xl font-bold text-gray-800">Executive Summary</h2>
-            <p class="mb-6">Evaluated the operational effectiveness of the Integrity Protocol. While the conceptual framework is sound, testing revealed a significant latency with human-in-the-loop and a lack of automated enforcement. The ecosystem remains resilient but relies too heavily on manual intervention.</p>
-
-            <div class="overflow-x-auto my-8">
-                <table class="min-w-full border border-gray-200">
-                    <thead class="bg-gray-100">
-                        <tr>
-                            <th class="px-4 py-3 border text-left">Control Area</th>
-                            <th class="px-4 py-3 border text-center">Principle</th>
-                            <th class="px-4 py-3 border text-center">Rating</th>
-                            <th class="px-4 py-3 border text-center">Trend</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="px-4 py-3 border">Data Utility</td>
-                            <td class="px-4 py-3 border text-center">1</td>
-                            <td class="px-4 py-3 border text-center text-green-600 font-bold">Satisfactory</td>
-                            <td class="px-4 py-3 border text-center text-green-600">↘</td>
-                        </tr>
-                        <tr class="bg-red-50">
-                            <td class="px-4 py-3 border font-semibold text-red-700">Containment</td>
-                            <td class="px-4 py-3 border text-center text-red-700">2</td>
-                            <td class="px-4 py-3 border text-center text-red-700 font-bold underline">CRITICAL</td>
-                            <td class="px-4 py-3 border text-center text-red-700 font-bold">↗</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 border">Accountability</td>
-                            <td class="px-4 py-3 border text-center">3</td>
-                            <td class="px-4 py-3 border text-center text-orange-600 font-bold">Marginal</td>
-                            <td class="px-4 py-3 border text-center text-gray-500">→</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h2 class="text-2xl font-bold text-gray-800 mt-10">The Human Logic Gap</h2>
-            <p class="mb-4">Applying v2.0 exposed a structural flaw: I designed a protocol for a machine, but it’s being executed by a human. In GRC terms, <strong>Pathways are not Protections.</strong></p>
+        <body class="vscode-body vscode-light">
+            <div
+            class="github-markdown-body"
+            data-color-mode="auto"
+            data-light-theme="light"
+            data-dark-theme="dark"
+        >
+            <div class="github-markdown-content"><span id="markdown-mermaid" aria-hidden="true"
+                    data-dark-mode-theme="dark"
+                    data-light-mode-theme="default"
+                    data-max-text-size="50000"></span>
+                <hr>
+<h2 id="layout-posttitle-internal-audit-report-q12026">layout: post
+title: Internal Audit Report Q1/2026</h2>
+<h1 id="ip-protocol-internal-audit-report-q1-2026"><strong>IP Protocol: Internal Audit Report (Q1 2026)</strong></h1>
+<p><strong>Reference: IP-PER-001</strong></p>
+<p><strong>Classification:</strong> Educational purposes</p>
+<p><strong>Audit Scope:</strong> Personal Digital Ecosystem vs. Integrity Protocol v2.0</p>
+<h3 id="executive-summary"><strong>Executive Summary</strong></h3>
+<p>Evaluated the operational effectiveness of the Integrity Protocol. While the conceptual framework is sound, testing revealed a significant latency with human-in-the-loop and a lack of automated enforcement for Principle 4. The ecosystem remains resilient but relies too heavily on manual intervention rather than systemic constraints.</p>
+<h3 id="scorecard"><strong>Scorecard</strong></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Control Area</th>
+<th>Principle</th>
+<th>Rating</th>
+<th>Risk Trend</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Data Utility</td>
+<td>1</td>
+<td>Satisfactory</td>
+<td>Decreasing</td>
+</tr>
+<tr>
+<td style="text-align:left">Containment</td>
+<td>2</td>
+<td>Critical</td>
+<td>Increasing</td>
+</tr>
+<tr>
+<td style="text-align:left">Accountability</td>
+<td>3</td>
+<td>Marginal</td>
+<td>Stable</td>
+</tr>
+</tbody>
+</table>
+<h3 id="detailed-findings--testing"><strong>Detailed Findings &amp; Testing</strong></h3>
+<h5 id="test-case-001-data-minimisation-principle-1"><strong>Test Case 001:</strong> Data Minimisation (Principle 1)</h5>
+<p><strong>Control Objective:</strong> Minimise attack surface by purging non-essential data.</p>
+<p><strong>Test Procedure:</strong> Audit of location permissions on primary communication device.</p>
+<p><em>Identify a high value asset (mobile phone). List every location sharing permission currently &quot;always on&quot;. Disable every permission that has not been utilised in the last 24 hours.</em></p>
+<p><strong>Observation:</strong> 34 active permissions were identified. 26 (76%) had not been utilised in &gt;24 hours, violating Justified Utility threshold.</p>
+<p><strong>Result:</strong> Non-Compliant.</p>
+<p><strong>Remediation:</strong> Immediate reduction and revocation of dormant permissions. Living Map updated to justify the remaining 8 location permissions.</p>
+<h5 id="test-case-002-blast-radius--zero-trust-principle-2">Test Case 002: Blast Radius &amp; Zero Trust (Principle 2)</h5>
+<p><strong>Control Objective:</strong> Prevent lateral movement following a perimeter breach.</p>
+<p><strong>Test Procedure:</strong> A simulated handset compromise to determine if identity-first barriers (Principle 2) stop access to Password Manager.</p>
+<p><em>Assume attacker has gained full control of the primary mobile device. Trace the path. If they do have the phone, do they have the 2FA app? If yes, can they reset the master password?</em></p>
+<p><strong>Observation:</strong> The primary mobile device acts as a Golden Key. Access to the device grants access to the MFA app, which in turn grants access to Password Manager.</p>
+<p><strong>Result:</strong> Fail. Micro-segmentation logic is conceptual but not physically enforced.</p>
+<p><strong>Remediation:</strong> Implement hardware-based security keys (OOB) to decouple identity from the primary device.</p>
+<h5 id="test-case-003-contestability--human-circuit-breaker-principle-3">Test Case 003: Contestability &amp; Human Circuit Breaker (Principle 3)</h5>
+<p><strong>Control Objective:</strong> Ensure AI decisions are challengeable and not blindly accepted.</p>
+<p><strong>Test Procedure:</strong> Subjecting high-impact AI-generated advice to a colleague to see whether they contest its findings.</p>
+<p><em>Take a complex output from LLM like a health plan. A colleague (third-party auditor) will attempt to find the evidence chain for its most aggressive claim. If it takes more than 3 minutes to verify the source or override the logic with a manual data point, the control fails.</em></p>
+<p><strong>Observation:</strong> Automation bias detected. The colleague accepted the AI output without invoking the contestable pathway due to high linguistic confidence.</p>
+<p><strong>Result:</strong> Marginal. The protocol allows for contestability but does not <em>force</em> it.</p>
+<p><strong>Remediation:</strong> Update the Protocol to require a mandatory alternate perspective log for all AI-assisted decisions over a specific risk threshold.</p>
+<hr>
+<p>Applying the IP Protocol v2.0 to my daily life has exposed a structural flaw: I designed a protocol for a machine, but it’s being executed by a human.</p>
+<p>In GRC terms, I discovered that <strong>Pathways are not Protections.</strong> I assumed that because a Contestability Pathway (Principle 3) existed, it would be used. My testing proved the opposite. When presented with high-confidence AI output, the human brain seeks the Path of Least Resistance. In Test Case 003, the Human Circuit Breaker didn't trip; it acted as a Human Rubber Stamp. We are linguistically seduced by AI, trading our critical faculty for speed.</p>
+<p>If this protocol were a piece of code, these would be <strong>Dead Paths</strong>, logic that exists in the script but never executes in production.</p>
+<p>Furthermore, Principle 2 (Containment) revealed that my Zero Trust model was actually a nested trust trap. By allowing my phone to be the Golden Key for my entire digital life, I haven't segmented my risk; I've just concentrated it into a single pocket-sized point of failure.</p>
+<p>To move toward <strong>v2.1</strong>, the protocol must shift from <strong>offering</strong> a choice to <strong>enforcing</strong> a constraint. The Continuous Compliance Telemetry cannot rely on my own memory; I am both the sensor and the auditor, which is a fundamental conflict of interest. Without a physical or digital nudge, the protocol is just a high-minded wish list.</p>
+<hr>
+<h3 id="the-ip-trigger-registry">The IP Trigger Registry</h3>
+<table>
+<thead>
+<tr>
+<th>Trigger ID</th>
+<th>Event Category</th>
+<th>Definition of Trigger</th>
+<th>Required IP Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TR-01</td>
+<td>System Expansion</td>
+<td>Installing a new app/service that requests access to Contacts, Files, or Location.</td>
+<td><strong>Principle 1 Audit:</strong> Document the <em>specific</em> data utility. Why are the additional permissions required?</td>
+</tr>
+<tr>
+<td>TR-02</td>
+<td>Identity Shift</td>
+<td>Changing a primary password or adding a new biometric/MFA factor.</td>
+<td><strong>Principle 2 Test:</strong> Perform a blast radius check. Does this change create a new single Point of Failure?</td>
+</tr>
+<tr>
+<td>TR-03</td>
+<td>High-Stakes AI</td>
+<td>Using an LLM to generate a work product, legal text, or financial plan.</td>
+<td><strong>Principle 3 Invoke:</strong> Identify and document at least one critical assumption made by the AI.</td>
+</tr>
+<tr>
+<td>TR-04</td>
+<td>Anomaly/Drift</td>
+<td>A service sends an unexpected security alert or a New Login notification.</td>
+<td><strong>Principle 4 Review:</strong> Do not just clear the alert. I must trace the Telemetry to see if my perimeter logic failed.</td>
+</tr>
+<tr>
+<td>TR-05</td>
+<td>Third-Party Flux</td>
+<td>A service I use updates its Privacy Policy or Terms of Service.</td>
+<td><strong>Principle 1 Re-Validation:</strong> Does the Liability vs. Benefit equation still balance, or is it time to purge?</td>
+</tr>
+</tbody>
+</table>
+<p>PS:</p>
+<p><strong>Formal Disclosure (IP-RAF-2026-001):</strong> As of this report, I am formally accepting a CRITICAL risk regarding Principle 2 (Containment). My primary handset remains a Single Point of Failure for my identity ecosystem.</p>
+<p><strong>Compensating Control:</strong> Manual weekly audits of login activity until hardware-based OOB authentication is implemented.</p>
+<p><strong>Review Date:</strong> 30 Days from today.</p>
+</div>
+        </div>
             
-            <blockquote class="border-l-4 border-indigo-500 pl-4 py-2 bg-indigo-50 italic my-6">
-                "If this protocol were a piece of code, these would be Dead Paths—logic that exists in the script but never executes in production."
-            </blockquote>
+  <footer class="bg-gray-800 text-white mt-10"> 
 
-            <h3 class="text-xl font-bold text-indigo-600 mt-10 mb-4 uppercase tracking-wider">The IP Trigger Registry</h3>
-            <div class="overflow-x-auto">
-                <table class="min-w-full border border-gray-200 text-sm">
-                    <thead class="bg-gray-800 text-white">
-                        <tr>
-                            <th class="px-4 py-2 border">Trigger ID</th>
-                            <th class="px-4 py-2 border">Event Category</th>
-                            <th class="px-4 py-2 border">Required Action</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y">
-                        <tr><td class="px-4 py-2 border font-mono">TR-01</td><td class="px-4 py-2 border">System Expansion</td><td class="px-4 py-2 border font-light italic">Document utility for new data access.</td></tr>
-                        <tr><td class="px-4 py-2 border font-mono">TR-02</td><td class="px-4 py-2 border">Identity Shift</td><td class="px-4 py-2 border font-light italic">Perform blast radius check.</td></tr>
-                        <tr><td class="px-4 py-2 border font-mono">TR-03</td><td class="px-4 py-2 border">High-Stakes AI</td><td class="px-4 py-2 border font-light italic">Log one critical AI assumption.</td></tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center"> 
 
-            <div class="mt-12 p-6 border-2 border-red-200 bg-red-50 rounded-lg">
-                <h4 class="text-red-800 font-bold text-lg mb-2 underline decoration-double">Formal Disclosure (IP-RAF-2026-001)</h4>
-                <p class="text-red-700"><strong>CRITICAL RISK:</strong> Handset remains a Single Point of Failure. Accepting risk temporarily under strict compensating control.</p>
-                <p class="text-xs text-red-900 mt-4">Review Date: 30 Days from today.</p>
-            </div>
-        </section>
-    </main>
+            <!-- 3. Copyright update: Changed name to 'The Integrity Protocol' --> 
 
-    </body>
-</html>
+            <p>&copy; 2026 The Integrity Protocol. All rights reserved.</p> 
+
+        </div> 
+
+    </footer> 
+
+     
+
+    <script> 
+
+        function setActiveLink() { 
+
+            const path = window.location.pathname; 
+
+            let activeLink; 
+
+ 
+
+            // Define which page path matches which nav ID 
+
+            if (path.includes('/repos.html')) { 
+
+                activeLink = 'nav-repos'; 
+
+            } else if (path.includes('/blog.html')) { 
+
+                activeLink = 'nav-strategy'; 
+
+            } else if (path.includes('/about-me.html') || path === '/' || path.includes('/index.html')) { 
+
+                // Treats index.html or the root path (/) as the 'About Me' page 
+
+                activeLink = 'nav-about-me'; 
+
+            } 
+
+ 
+
+            if (activeLink) { 
+
+                const element = document.getElementById(activeLink); 
+
+                if (element) { 
+
+                    // Remove the default, inactive classes 
+
+                    element.classList.remove('text-gray-600', 'hover:text-indigo-600'); 
+
+                     
+
+                    // Add the active, highlighted classes 
+
+                    element.classList.add('text-indigo-600', 'font-semibold', 'border-b-2', 'border-indigo-600'); 
+
+                } 
+
+            } 
+
+        } 
+
+         
+
+        // Run the function when the page loads 
+
+        setActiveLink(); 
+
+    </script> 
+
+        </body>
+        </html>
