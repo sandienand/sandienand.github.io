@@ -1,8 +1,4 @@
----
-layout: post
-title: Internal Audit Report Q1/2026
----
-# 1. **IP Protocol: Internal Audit Report (Q1 2026)**
+# **IP Protocol: Internal Audit Report (Q1 2026)**
 
 **Reference: IP-PER-001**
 
@@ -18,7 +14,7 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 
 
 | Control Area   | Principle | Rating       | Risk Trend |
-| :------------- | --------- | ------------ | ---------- |
+| :--------------- | ----------- | -------------- | ------------ |
 | Data Utility   | 1         | Satisfactory | Decreasing |
 | Containment    | 2         | Critical     | Increasing |
 | Accountability | 3         | Marginal     | Stable     |
@@ -85,7 +81,7 @@ To move toward **v2.1**, the protocol must shift from **offering** a choice to *
 
 
 | Trigger ID | Event Category   | Definition of Trigger                                                              | Required IP Action                                                                                                   |
-| ---------- | ---------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| ------------ | ------------------ | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
 | TR-01      | System Expansion | Installing a new app/service that requests access to Contacts, Files, or Location. | **Principle 1 Audit:** Document the *specific* data utility. Why are the additional permissions required?            |
 | TR-02      | Identity Shift   | Changing a primary password or adding a new biometric/MFA factor.                  | **Principle 2 Test:** Perform a blast radius check. Does this change create a new single Point of Failure?           |
 | TR-03      | High-Stakes AI   | Using an LLM to generate a work product, legal text, or financial plan.            | **Principle 3 Invoke:** Identify and document at least one critical assumption made by the AI.                       |
