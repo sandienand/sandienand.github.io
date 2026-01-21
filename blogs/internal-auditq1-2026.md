@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "IP Protocol: Internal Audit Report (Q1 2026)"
-date: 21/01/2026
+date: 2026/01/21
 ---
 
 # **IP Protocol: Internal Audit Report (Q1 2026)**
