@@ -33,8 +33,8 @@ body {
 /* ARTICLE CONTAINER (The "Paper" look) */
 .article-content {
     background-color: var(--bg-content);
-    max-width: 850px;
-    margin: 2rem auto;
+    max-width: 90%;
+    margin: 2rem 0;
     padding: 3rem;
     border-radius: 12px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
