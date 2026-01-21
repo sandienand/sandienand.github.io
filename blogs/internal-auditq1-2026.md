@@ -2,7 +2,7 @@
 layout: post
 title: Internal Audit Report Q1/2026
 ---
-# **IP Protocol: Internal Audit Report (Q1 2026)**
+# 1. **IP Protocol: Internal Audit Report (Q1 2026)**
 
 **Reference: IP-PER-001**
 
@@ -10,11 +10,11 @@ title: Internal Audit Report Q1/2026
 
 **Audit Scope:** Personal Digital Ecosystem vs. Integrity Protocol v2.0
 
-### **Executive Summary**
+### 1.0.1. **Executive Summary**
 
 Evaluated the operational effectiveness of the Integrity Protocol. While the conceptual framework is sound, testing revealed a significant latency with human-in-the-loop and a lack of automated enforcement for Principle 4. The ecosystem remains resilient but relies too heavily on manual intervention rather than systemic constraints.
 
-### **Scorecard**
+### 1.0.2. **Scorecard**
 
 
 | Control Area   | Principle | Rating       | Risk Trend |
@@ -23,9 +23,9 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 | Containment    | 2         | Critical     | Increasing |
 | Accountability | 3         | Marginal     | Stable     |
 
-### **Detailed Findings & Testing**
+### 1.0.3. **Detailed Findings & Testing**
 
-##### **Test Case 001:** Data Minimisation (Principle 1)
+##### 1.0.3.0.1. **Test Case 001:** Data Minimisation (Principle 1)
 
 **Control Objective:** Minimise attack surface by purging non-essential data.
 
@@ -39,7 +39,7 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 
 **Remediation:** Immediate reduction and revocation of dormant permissions. Living Map updated to justify the remaining 8 location permissions.
 
-##### Test Case 002: Blast Radius & Zero Trust (Principle 2)
+##### 1.0.3.0.2. Test Case 002: Blast Radius & Zero Trust (Principle 2)
 
 **Control Objective:** Prevent lateral movement following a perimeter breach.
 
@@ -53,7 +53,7 @@ Evaluated the operational effectiveness of the Integrity Protocol. While the con
 
 **Remediation:** Implement hardware-based security keys (OOB) to decouple identity from the primary device.
 
-##### Test Case 003: Contestability & Human Circuit Breaker (Principle 3)
+##### 1.0.3.0.3. Test Case 003: Contestability & Human Circuit Breaker (Principle 3)
 
 **Control Objective:** Ensure AI decisions are challengeable and not blindly accepted.
 
@@ -81,7 +81,7 @@ To move toward **v2.1**, the protocol must shift from **offering** a choice to *
 
 ---
 
-### The IP Trigger Registry
+### 1.0.4. The IP Trigger Registry
 
 
 | Trigger ID | Event Category   | Definition of Trigger                                                              | Required IP Action                                                                                                   |
