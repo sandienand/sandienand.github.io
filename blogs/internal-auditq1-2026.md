@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IP Protocol: Internal Audit Report (Q1 2026)
+title: "IP Protocol: Internal Audit Report (Q1 2026)"
 date: 21/01/2026
 ---
 
